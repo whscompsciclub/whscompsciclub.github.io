@@ -14,7 +14,8 @@
       <pubDate>Thu, 05 Nov 2020 00:00:00 -0800</pubDate>
       
       <guid>https://whscompsciclub.github.io/wiki/vscodepython/</guid>
-      <description>VSCode Installation Download VSCode and choose the appropriate build from the multiselect Python Extension Install the VSCode Python Extension named Python in the VSCode Marketplace Install Python Windows  Download Python  For additional instructions check out the official documentation   macOS  Use Homebrew to install Python use brew install python3 at the Terminal prompt Follow instruction from here if necessary  Linux  There should be a built-in Python 3 installation already, but to install other Python packages you must install pip with get-pip.</description>
+      <description>g
+VSCode Installation Download VSCode and choose the appropriate build from the multiselect Python Extension Install the VSCode Python Extension named Python in the VSCode Marketplace Install Python Windows  Download Python  For additional instructions check out the official documentation   macOS  Use Homebrew to install Python use brew install python3 at the Terminal prompt Follow instruction from here if necessary  Linux  There should be a built-in Python 3 installation already, but to install other Python packages you must install pip with get-pip.</description>
     </item>
     
   </channel>
