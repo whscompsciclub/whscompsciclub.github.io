@@ -23,8 +23,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;Choose the appropriate build from the multiselect
-//&lt;img src=&#34;https://whscompsciclub.github.io/images/build.png&#34; alt=&#34;build options&#34;&gt;
-&lt;img src=&#34;https://whscompsciclub.github.io/images/build.png&#34; alt=&#34;build options picture&#34; style=&#34;float: left&#34; width=&#34;364.67&#34; height=&#34;431.33&#34; /&gt;&lt;/li&gt;
+&lt;img src=&#34;https://whscompsciclub.github.io/images/build.png&#34; alt=&#34;build options&#34;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -45,15 +44,34 @@
    target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34; 
 &gt;Python&lt;/a&gt;
 &lt;/li&gt;
+&lt;li&gt;For additional instructions check out the &lt;a href=&#34;https://docs.python.org/3.7/using/windows.html&#34; 
+  
+   target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34; 
+&gt;official documentation&lt;/a&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;mac--linux&#34;&gt;Mac &amp;amp; Linux&lt;/h3&gt;
+&lt;h3 id=&#34;macos&#34;&gt;macOS&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Follow instruction from &lt;a href=&#34;https://code.visualstudio.com/docs/python/python-tutorial&#34; 
+&lt;li&gt;Use &lt;a href=&#34;https://brew.sh/&#34; 
+  
+   target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34; 
+&gt;Homebrew&lt;/a&gt;
+ to install Python&lt;/li&gt;
+&lt;li&gt;use &lt;code&gt;brew install python3&lt;/code&gt; at the Terminal prompt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;linux&#34;&gt;Linux&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;There should be a built-in Python 3 installation already, but to install other Python packages you must install &lt;code&gt;pip&lt;/code&gt; with &lt;a href=&#34;https://pip.pypa.io/en/stable/installing/#installing-with-get-pip-py&#34; 
+  
+   target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34; 
+&gt;get-pip.py&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;follow-instruction-from-herehttpscodevisualstudiocomdocspythonpython-tutorial-if-necessary&#34;&gt;Follow instruction from &lt;a href=&#34;https://code.visualstudio.com/docs/python/python-tutorial&#34; 
   
    target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34; 
 &gt;here&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+ if necessary&lt;/h3&gt;
 &lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     
