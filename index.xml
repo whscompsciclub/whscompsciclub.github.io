@@ -22,11 +22,11 @@
 &gt;VSCode&lt;/a&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Choose the appropriate build from the multiselect
-&lt;img src=&#34;https://whscompsciclub.github.io/images/build.png&#34; alt=&#34;build options&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Choose the appropriate build from the multiselect&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://whscompsciclub.github.io/images/build.png&#34; alt=&#34;build options&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;python-extension&#34;&gt;Python Extension&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Install the &lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=ms-python.python&#34; 
@@ -64,7 +64,7 @@
 &gt;here&lt;/a&gt;
  if necessary&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;linux&#34;&gt;Linux&lt;/h2&gt;
+&lt;h3 id=&#34;linux&#34;&gt;Linux&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;There should be a built-in Python 3 installation already, but to install other Python packages you must install &lt;code&gt;pip&lt;/code&gt; with &lt;a href=&#34;https://pip.pypa.io/en/stable/installing/#installing-with-get-pip-py&#34; 
   
@@ -88,6 +88,19 @@
 &lt;li&gt;Open a Terminal Window and run&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;python3 --version&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;If the installation was successful, then the ouput windows will show the version of Python that you installed. If you recieved an error, try searching on &lt;a href=&#34;https://google.com&#34; 
+  
+   target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34; 
+&gt;Google&lt;/a&gt;
+ and &lt;a href=&#34;https://stackoverflow.com&#34; 
+  
+   target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34; 
+&gt;Stack Overflow&lt;/a&gt;
+, and following this tutorial &lt;a href=&#34;https://code.visualstudio.com/docs/python/python-tutorial&#34; 
+  
+   target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34; 
+&gt;here&lt;/a&gt;
+.&lt;/p&gt;
 &lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     
