@@ -9,6 +9,17 @@
     <copyright>CC-BY-NC-SA 4.0 | WHS CSC {year}</copyright>
     <lastBuildDate>Sat, 07 Nov 2020 00:00:00 -0800</lastBuildDate><atom:link href="https://whscompsciclub.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Java Cheatsheet</title>
+      <link>https://whscompsciclub.github.io/posts/java/</link>
+      <pubDate>Sat, 07 Nov 2020 00:00:00 -0800</pubDate>
+      
+      <guid>https://whscompsciclub.github.io/posts/java/</guid>
+      <description>Java Syntax Files All Java files &amp;amp; programs have the .java ending. ex: helloWorld.java
+Comments Comments are used to help understand a piece of code. Comments are ignored by the compiler and are human-readable words intended to make the code more readable.
+// this is an example comment /* this is a multilineexample comment */ Brackets and Semicolons Java uses brackets { } to define blocks of code and requires semicolons ; at the end of each line.</description>
+    </item>
+    
+    <item>
       <title>Python Cheatsheet</title>
       <link>https://whscompsciclub.github.io/posts/python/</link>
       <pubDate>Sat, 07 Nov 2020 00:00:00 -0800</pubDate>

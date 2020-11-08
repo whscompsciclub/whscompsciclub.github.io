@@ -2,7 +2,7 @@
 <html lang="en-us">
 
 <head>
-  <title>VSCode Python Installation Instructions | WHS Comp. Sci. Club</title>
+  <title>Java Cheatsheet | WHS Comp. Sci. Club</title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
@@ -15,7 +15,7 @@
   
   
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="VSCode Python Installation Instructions" />
+  <meta name="twitter:title" content="Java Cheatsheet" />
   <meta name="twitter:description" content=""/>
   <meta name="twitter:site" content="https://twitter.com/whscompsciclub" />
   <meta name="twitter:creator" content="https://twitter.com/whscompsciclub" />
@@ -50,8 +50,8 @@
     { 
       "@context": "http://schema.org", 
       "@type": "WebSite", 
-      "url": "https:\/\/whscompsciclub.github.io\/posts\/vscodepython\/",
-      "name": "VSCode Python Installation Instructions",
+      "url": "https:\/\/whscompsciclub.github.io\/posts\/java\/",
+      "name": "Java Cheatsheet",
       "author": {
         "@type": "Person",
         "name": ""
@@ -97,89 +97,44 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">VSCode Python Installation Instructions</h1>
-            <time datetime="2020-11-05 00:00:00 -0800 PST" class="post__date">Nov 5, 2020</time> 
+            <h1 id="post__title">Java Cheatsheet</h1>
+            <time datetime="2020-11-07 00:00:00 -0800 PST" class="post__date">Nov 7, 2020</time> 
           </header>
           <article class="post__content">
               
-<h2 id="vscode-installation">VSCode Installation<a class="anchor" href="#vscode-installation">#</a></h2>
-<p>Download <a href="https://code.visualstudio.com/" 
+<h2 id="java-syntax">Java Syntax<a class="anchor" href="#java-syntax">#</a></h2>
+<h4 id="files">Files</h4>
+<p>All Java files &amp; programs have the <code>.java</code> ending. ex: <code>helloWorld.java</code></p>
+<h4 id="comments">Comments</h4>
+<p>Comments are used to help understand a piece of code. Comments are ignored by the compiler and are human-readable words intended to make the code more readable.</p>
+<pre><code class="language-java">// this is an example comment
+</code></pre>
+<pre><code class="language-java">/* this is 
+a multiline
+example comment */
+</code></pre>
+<h4 id="brackets-and-semicolons">Brackets and Semicolons</h4>
+<p>Java uses brackets <code>{ }</code> to define blocks of code and requires semicolons <code>;</code> at the end of each line.</p>
+<h4 id="class-declaration--main-method">Class Declaration &amp; <code>main()</code> Method</h4>
+<p>Example Class &amp; Main Method:</p>
+<pre><code class="language-java">public class helloWorld{
+    public static void main(String[] args){
+               
+    }
+}
+</code></pre>
+<p>Java code must be run inside a <code>class</code> and the filename must match the class name. In our example, the filename would be <code>helloWorld.java</code> to match the class name of <code>helloWorld</code>.<br>
+<strong>Note</strong>: Java is case-sensitive: <code>helloWorld</code> is not the same as <code>HelloWorld</code></p>
+<p>The second line is our <code>main()</code> method and will also be found in every Java program. There is no need to understand it for now, just memorize it and remember that each Java program will have a <code>class</code> name matching the filename as well as a <code>main()</code> method.</p>
+<p>Check out this <a href="https://www.protechtraining.com/content/java_fundamentals_tutorial-hello_world" 
   
    target="_blank" rel="noreferrer noopener" 
->VSCode</a>
- and choose the appropriate build from the multiselect
-<br><br>
-<img src="/images/build.png" height="325"></p>
-<h2 id="python-extension">Python Extension<a class="anchor" href="#python-extension">#</a></h2>
-<p>Install the <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" 
-  
-   target="_blank" rel="noreferrer noopener" 
->VSCode Python Extension</a>
- named <strong>Python</strong> in the VSCode Marketplace
-<br><br>
-<img src="/images/pythonextension1.png" height="300"></p>
-<h2 id="install-python">Install Python<a class="anchor" href="#install-python">#</a></h2>
-<h3 id="windows">Windows<a class="anchor" href="#windows">#</a></h3>
-<ul>
-<li>Download <a href="https://www.python.org/downloads/" 
-  
-   target="_blank" rel="noreferrer noopener" 
->Python</a>
-</li>
-<li>For additional instructions check out the <a href="https://docs.python.org/3.7/using/windows.html" 
-  
-   target="_blank" rel="noreferrer noopener" 
->official documentation</a>
-</li>
-</ul>
-<h3 id="macos">macOS<a class="anchor" href="#macos">#</a></h3>
-<ul>
-<li>Use <a href="https://brew.sh/" 
-  
-   target="_blank" rel="noreferrer noopener" 
->Homebrew</a>
- to install Python</li>
-<li>use <code>brew install python3</code> at the Terminal prompt</li>
-<li>Follow instructions from <a href="https://code.visualstudio.com/docs/python/python-tutorial" 
-  
-   target="_blank" rel="noreferrer noopener" 
->here</a>
- if necessary</li>
-</ul>
-<h3 id="linux">Linux<a class="anchor" href="#linux">#</a></h3>
-<ul>
-<li>There should be a built-in Python 3 installation already, but to install other Python packages you must install <code>pip</code> with <a href="https://pip.pypa.io/en/stable/installing/#installing-with-get-pip-py" 
-  
-   target="_blank" rel="noreferrer noopener" 
->get-pip.py</a>
-</li>
-<li>Follow instructions from <a href="https://code.visualstudio.com/docs/python/python-tutorial" 
-  
-   target="_blank" rel="noreferrer noopener" 
->here</a>
- if necessary</li>
-</ul>
-<h2 id="check-python-installation">Check Python Installation<a class="anchor" href="#check-python-installation">#</a></h2>
-<ul>
-<li>Windows: Open a command prompt and run <code>py -3 --version</code></li>
-<li>macOS / Linux: In the terminal, run <code>python3 --version</code></li>
-</ul>
-<p>If the installation was successful, then the ouput windows will show the version of Python that you installed. If you received an error, try searching on <a href="https://google.com" 
-  
-   target="_blank" rel="noreferrer noopener" 
->Google</a>
- and <a href="https://stackoverflow.com" 
-  
-   target="_blank" rel="noreferrer noopener" 
->Stack Overflow</a>
-, and following this tutorial <a href="https://code.visualstudio.com/docs/python/python-tutorial" 
-  
-   target="_blank" rel="noreferrer noopener" 
->here</a>
-.</p>
+>article</a>
+ for more on files, comments, class declarations, <code>main()</code> methods, keywords &amp; literals, and more in Java.</p>
 <p><br><br></p>
 <blockquote>
-<p>Created By: <em>WHS Computer Science Club Officers</em></p>
+<p>This is still a work in progress.<br>
+Created By: <em>WHS Computer Science Club Officers</em></p>
 </blockquote>
 
 
@@ -189,12 +144,12 @@
 
  <div class="pagination">
   
-
-  
     <a class="pagination__item" href="https://whscompsciclub.github.io/posts/python/">
-      <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >Python Cheatsheet</span>
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Python Cheatsheet</span>
     </a>
+  
+
   
 </div>
 
@@ -270,16 +225,11 @@
           
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#vscode-installation">VSCode Installation</a></li>
-    <li><a href="#python-extension">Python Extension</a></li>
-    <li><a href="#install-python">Install Python</a>
+    <li><a href="#java-syntax">Java Syntax</a>
       <ul>
-        <li><a href="#windows">Windows</a></li>
-        <li><a href="#macos">macOS</a></li>
-        <li><a href="#linux">Linux</a></li>
+        <li></li>
       </ul>
     </li>
-    <li><a href="#check-python-installation">Check Python Installation</a></li>
   </ul>
 </nav>
       </div>
