@@ -131,6 +131,58 @@ example comment */
    target="_blank" rel="noreferrer noopener" 
 >article</a>
  for more on files, comments, class declarations, <code>main()</code> methods, keywords &amp; literals, and more in Java.</p>
+<h2 id="print-statement">Print Statement<a class="anchor" href="#print-statement">#</a></h2>
+<p>Java&rsquo;s <code>System.out.print()</code> prints out something in the console. ex: <code>Hello!</code></p>
+<h3 id="difference-between-print-and-println">Difference between <code>print()</code> and <code>println()</code><a class="anchor" href="#difference-between-print-and-println">#</a></h3>
+<ul>
+<li><code>System.out.print()</code>: Prints the text on the console and the <strong>cursor remains at the end of the text</strong>. The next printing will start from there.</li>
+<li><code>System.out.println()</code>: Prints the text on the console and the <strong>cursor moves to the start of the next line</strong> at the console. The next printing will start from there. (more commonly used)</li>
+</ul>
+<pre><code class="language-Java">System.out.print(&quot;Hello &quot;);
+System.out.println(&quot;World&quot;);
+System.out.println(&quot;Java is cool!&quot;);
+System.out.println(&quot;Remember your semicolons!!!&quot;);
+</code></pre>
+<p>Output:</p>
+<pre><code>Hello World
+Java is cool!
+Remember your semicolons!!!
+</code></pre>
+<p>Check out this <a href="https://www.geeksforgeeks.org/system-out-println-in-java/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on print statements in Java.</p>
+<h2 id="variables">Variables<a class="anchor" href="#variables">#</a></h2>
+<p>Variables are containers for storing data values. In Java, 3 commonly used terms when refering to variables are <strong>declaration</strong>, <strong>assignment</strong>, and <strong>initialization</strong>.</p>
+<ul>
+<li><strong>declaration</strong>: states the type of a variable, along with its name. A variable cannot be declared multiple times and must be declared before reading or assigning values to a variable.</li>
+<li><strong>assignment</strong>: replacing the old value of a variable with a new one</li>
+<li><strong>initialization</strong>: the first time a value is assigned to a variable. Can be done with declaration.</li>
+</ul>
+<h3 id="data-types">Data Types<a class="anchor" href="#data-types">#</a></h3>
+<h4 id="integer">Integer</h4>
+<p>An Integer or an <code>int</code> is a whole number with no decimal points. Examples of integers are: <code>22</code>, <code>-14</code>, <code>39</code></p>
+<pre><code class="language-Java">int x = 5;
+System.out.println(x);
+</code></pre>
+<p>In this example, the integer variable <code>x</code> has been assigned the value of <code>5</code> and the program will print out <code>5</code> when run.</p>
+<h4 id="string">String</h4>
+<p>A <code>String</code> is a sequence of characters that typically represents text. Examples of Strings are: <code>Hello</code>, <code>Python</code>, <code>the brown fox jumps over the lazy dog</code></p>
+<pre><code class="language-Java">String y = &quot;John&quot;;
+System.out.println(y);
+</code></pre>
+<p>In this example. the String variable <code>y</code> has been assigned the value of <code>John</code> and the program will print <code>John</code> when run.</p>
+<h4 id="boolean">Boolean</h4>
+<p>A <code>Boolean</code> represents either <code>true</code> or <code>false</code> and is used in logic computing.</p>
+<pre><code class="language-Java">Boolean z = true;
+System.out.println(z);
+</code></pre>
+<p>Check out this <a href="https://www.w3schools.com/java/java_variables.asp" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on variables in Java.</p>
 <p><br><br></p>
 <blockquote>
 <p>This is still a work in progress.<br>
@@ -228,6 +280,16 @@ Created By: <em>WHS Computer Science Club Officers</em></p>
     <li><a href="#java-syntax">Java Syntax</a>
       <ul>
         <li></li>
+      </ul>
+    </li>
+    <li><a href="#print-statement">Print Statement</a>
+      <ul>
+        <li><a href="#difference-between-print-and-println">Difference between <code>print()</code> and <code>println()</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#variables">Variables</a>
+      <ul>
+        <li><a href="#data-types">Data Types</a></li>
       </ul>
     </li>
   </ul>
