@@ -148,6 +148,7 @@ System.out.println(&quot;Remember your semicolons!!!&quot;);
 Java is cool!
 Remember your semicolons!!!
 </code></pre>
+<p><code>World</code> is printed on the same line as <code>Hello </code> because the first print statement is a <code>print()</code> not <code>println()</code>.</p>
 <p>Check out this <a href="https://www.geeksforgeeks.org/system-out-println-in-java/" 
   
    target="_blank" rel="noreferrer noopener" 
@@ -311,7 +312,31 @@ else{
   
    target="_blank" rel="noreferrer noopener" 
 >article</a>
- for more on if statements in Java.
+ for more on if statements in Java.</p>
+<h2 id="loops">Loops<a class="anchor" href="#loops">#</a></h2>
+<h3 id="for-loops">For Loops<a class="anchor" href="#for-loops">#</a></h3>
+<p>Syntax:</p>
+<pre><code class="language-java">for(statement1; statement2; statement3){
+    // statements to be executed
+}
+</code></pre>
+<p><strong>statement1</strong>: executed once before everything else<br>
+<strong>statement2</strong>: the condition of the loop<br>
+<strong>statement3</strong>: executed every time the loop is iterated</p>
+<p>Example:</p>
+<pre><code class="language-java">for(int i = 0; i &lt; 4; i++){
+    System.out.println(i);
+}
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-java">0
+1
+2
+3
+</code></pre>
+<p><strong>statement 1</strong>: declares/initializes a variable before the loop starts <code>int i = 0</code>.
+<strong>statement 2</strong>: defines the condition for the loop to run (<code>i &lt; 4</code>). If the condition is true, the loop will iterate, if it is false, the loop will end.<br>
+<strong>statement 3</strong>: increases a value <code>i++</code> each time the code block in the loop has been executed.
 <br><br></p>
 <blockquote>
 <p>This is still a work in progress.<br>
@@ -437,6 +462,11 @@ Created By: <em>WHS Computer Science Club Officers</em></p>
       </ul>
     </li>
     <li><a href="#if-statements">If Statements</a></li>
+    <li><a href="#loops">Loops</a>
+      <ul>
+        <li><a href="#for-loops">For Loops</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
       </div>
