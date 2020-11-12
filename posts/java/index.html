@@ -334,10 +334,63 @@ else{
 2
 3
 </code></pre>
-<p><strong>statement 1</strong>: declares/initializes a variable before the loop starts <code>int i = 0</code>.
+<p><strong>statement 1</strong>: declares/initializes a variable before the loop starts <code>int i = 0</code>.<br>
 <strong>statement 2</strong>: defines the condition for the loop to run (<code>i &lt; 4</code>). If the condition is true, the loop will iterate, if it is false, the loop will end.<br>
-<strong>statement 3</strong>: increases a value <code>i++</code> each time the code block in the loop has been executed.
-<br><br></p>
+<strong>statement 3</strong>: increases a value <code>i++</code> each time the code block in the loop has been executed.</p>
+<p>During each iteration, the loop will print out the value of <code>i</code> which increments from <code>0</code> to <code>3</code>.</p>
+<p>Check out this <a href="https://www.w3schools.com/java/java_for_loop.asp" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on for loops in Java.</p>
+<h3 id="while-loops">While Loops<a class="anchor" href="#while-loops">#</a></h3>
+<p>Syntax:</p>
+<pre><code class="language-java">while(condition){
+    // statements to be executed
+}
+</code></pre>
+<p>A while loop will iterate as long as the boolean condition is <code>true</code>.</p>
+<p>Example:</p>
+<pre><code class="language-java">int i = 0;
+while(i &lt; 4){
+    System.out.println(i);
+    i++;
+}
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-java">0
+1
+2
+3
+</code></pre>
+<p>During each iteration, the loop will print out the value of <code>i</code> which starts at <code>0</code> and increments by 1 via <code>i++</code> and ends at <code>3</code>.</p>
+<p>Check out this <a href="https://www.w3schools.com/java/java_while_loop.asp" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on while loops in Java.</p>
+<h2 id="arrays">Arrays<a class="anchor" href="#arrays">#</a></h2>
+<p>An array is a fixed-size sequential collection of elements of the same data type. Arrays are used to store collections of data.</p>
+<h3 id="declaringinitializing">Declaring/Initializing<a class="anchor" href="#declaringinitializing">#</a></h3>
+<p>There are many various ways to declare an Array, below are some more commonly used methods.</p>
+<pre><code class="language-java">int arr[] = new int[5];                                
+String[] fruits = {&quot;apple&quot;, &quot;orange&quot;, &quot;pear&quot;, &quot;banana&quot;};
+</code></pre>
+<p>The first line creates an empty Integer (<code>int</code>) Array of size 5 with the name <code>arr</code>.</p>
+<p>The second line creates a String Array called <code>fruits</code> with the elements <code>apple</code>, <code>orange</code>, <code>pear</code>, and <code>banana</code>.</p>
+<h3 id="accessing-elements-of-an-array">Accessing Elements of an Array<a class="anchor" href="#accessing-elements-of-an-array">#</a></h3>
+<pre><code class="language-java">String[] fruits = {&quot;apple&quot;, &quot;orange&quot;, &quot;pear&quot;, &quot;banana&quot;};
+System.out.println(fruits[0]);
+fruits[1] = &quot;lemon&quot;;
+System.out.println(fruits[1]);
+</code></pre>
+<p>Output:</p>
+<pre><code>apple
+lemon
+</code></pre>
+<p>Java Arrays uses <strong>zero-based indexing</strong> (starting from 0). The first element of an array can be accessed using the name of the Array then <code>[0]</code> as shown by line 2.</p>
+<p>In line 3, <code>fruits[1]</code> has the value <code>orange</code>, but was reassign it to <code>lemon</code>. In line 4, when we print the value of <code>fruits[1]</code>, the program prints <code>lemon</code>.</p>
+<p><br><br></p>
 <blockquote>
 <p>This is still a work in progress.<br>
 Created By: <em>WHS Computer Science Club Officers</em></p>
@@ -465,6 +518,13 @@ Created By: <em>WHS Computer Science Club Officers</em></p>
     <li><a href="#loops">Loops</a>
       <ul>
         <li><a href="#for-loops">For Loops</a></li>
+        <li><a href="#while-loops">While Loops</a></li>
+      </ul>
+    </li>
+    <li><a href="#arrays">Arrays</a>
+      <ul>
+        <li><a href="#declaringinitializing">Declaring/Initializing</a></li>
+        <li><a href="#accessing-elements-of-an-array">Accessing Elements of an Array</a></li>
       </ul>
     </li>
   </ul>
