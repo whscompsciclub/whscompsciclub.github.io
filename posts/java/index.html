@@ -104,7 +104,7 @@
               
 <h2 id="java-syntax">Java Syntax<a class="anchor" href="#java-syntax">#</a></h2>
 <h3 id="files">Files<a class="anchor" href="#files">#</a></h3>
-<p>All Java files &amp; programs have the <code>.java</code> ending. ex: <code>helloWorld.java</code></p>
+<p>All Java files &amp; programs have the <code>.java</code> ending. ex: <code>HelloWorld.java</code></p>
 <h3 id="comments">Comments<a class="anchor" href="#comments">#</a></h3>
 <p>Comments are used to help understand a piece of code. Comments are ignored by the compiler and are human-readable words intended to make the code more readable.</p>
 <pre><code class="language-java">// this is an example comment
@@ -114,18 +114,18 @@ a multiline
 example comment */
 </code></pre>
 <h3 id="brackets-and-semicolons">Brackets and Semicolons<a class="anchor" href="#brackets-and-semicolons">#</a></h3>
-<p>Java uses brackets <code>{ }</code> to define blocks of code and requires semicolons <code>;</code> at the end of each line.</p>
+<p>Java uses braces <code>{ }</code> to define blocks of code. A block is typically a group of statements. Java also requires semicolons <code>;</code> at the end of each statement (the basic building block of many programming languages).</p>
 <h3 id="class-declaration--main-method">Class Declaration &amp; <code>main()</code> Method<a class="anchor" href="#class-declaration--main-method">#</a></h3>
 <p>Example Class &amp; Main Method:</p>
-<pre><code class="language-java">public class helloWorld{
+<pre><code class="language-java">public class HelloWorld{
     public static void main(String[] args){
                
     }
 }
 </code></pre>
-<p>Java code must be run inside a <code>class</code> and the filename must match the class name. In our example, the filename would be <code>helloWorld.java</code> to match the class name of <code>helloWorld</code>.<br>
-<strong>Note</strong>: Java is case-sensitive: <code>helloWorld</code> is not the same as <code>HelloWorld</code></p>
-<p>The second line is our <code>main()</code> method and will also be found in every Java program. There is no need to understand it for now, just memorize it and remember that each Java program will have a <code>class</code> name matching the filename as well as a <code>main()</code> method.</p>
+<p>Java code must be run inside a <code>class</code> and the filename must match the class name. In our example, the filename would be <code>HelloWorld.java</code> to match the class name of <code>HelloWorld</code>.<br>
+<strong>Note</strong>: Java is case-sensitive: <code>HelloWorld</code> is not the same as <code>helloWorld</code></p>
+<p>The second line is our <code>main()</code> method and will also be found in every Java program. When you run a Java application, the <code>main()</code> method is where the programThere is no need to understand it for now, just memorize it and remember that each Java program will have a <code>class</code> name matching the filename as well as a <code>main()</code> method.</p>
 <p>Check out this <a href="https://www.protechtraining.com/content/java_fundamentals_tutorial-hello_world" 
   
    target="_blank" rel="noreferrer noopener" 
@@ -135,8 +135,8 @@ example comment */
 <p>Java&rsquo;s <code>System.out.print()</code> prints out something in the console. ex: <code>Hello!</code></p>
 <h3 id="difference-between-print-and-println">Difference between <code>print()</code> and <code>println()</code><a class="anchor" href="#difference-between-print-and-println">#</a></h3>
 <ul>
-<li><code>System.out.print()</code>: Prints the text on the console and the <strong>cursor remains at the end of the text</strong>. The next printing will start from there.</li>
-<li><code>System.out.println()</code>: Prints the text on the console and the <strong>cursor moves to the start of the next line</strong> at the console. The next printing will start from there. (more commonly used)</li>
+<li><code>System.out.print()</code>: Prints the text on the console and the <strong>cursor remains at the end of the text</strong>, the next print statement will start from here.</li>
+<li><code>System.out.println()</code>: Prints the text on the console and the <strong>cursor moves to the start of the next line</strong> at the console, the next print statement will start from here. (more commonly used)</li>
 </ul>
 <pre><code class="language-Java">System.out.print(&quot;Hello &quot;);
 System.out.println(&quot;World&quot;);
@@ -175,8 +175,8 @@ System.out.println(y);
 </code></pre>
 <p>In this example. the String variable <code>y</code> has been assigned the value of <code>John</code> and the program will print <code>John</code> when run.</p>
 <h4 id="boolean">Boolean</h4>
-<p>A <code>Boolean</code> represents either <code>true</code> or <code>false</code> and is used in logic computing.</p>
-<pre><code class="language-Java">Boolean z = true;
+<p>A <code>boolean</code> represents either <code>true</code> or <code>false</code> and is used in logic computing.</p>
+<pre><code class="language-Java">boolean z = true;
 System.out.println(z);
 </code></pre>
 <p>Check out this <a href="https://www.w3schools.com/java/java_variables.asp" 
@@ -190,7 +190,7 @@ System.out.println(z);
 int b = Integer.parseInt(a);
 System.out.println(b + 2);
 </code></pre>
-<p>To convert from one data type to another, the most common way is to use <code>parse</code>. There are also many other ways to convert; to convert to a String, we&rsquo;d most commonly use <code>toString()</code> or <code>valueOf()</code>.</p>
+<p>To convert from one data type to another, the most common way is to use <code>parse</code>. There are also many other ways to convert; to convert to a String, we&rsquo;d most commonly use <code>toString()</code>.</p>
 <p>Check out this <a href="https://www.educba.com/conversion-in-java/?source=leftnav" 
   
    target="_blank" rel="noreferrer noopener" 
@@ -285,9 +285,9 @@ The third line is <code>false</code> because <code>10</code> is not equal to <co
 <h2 id="scanner-user-input">Scanner (User Input)<a class="anchor" href="#scanner-user-input">#</a></h2>
 <p>Scanner is a Java class in the <code>java.util</code> package to obtain input. It&rsquo;s the easiest way to read input, but not the most efficient.</p>
 <h4 id="reading-input-from-the-console">Reading Input from the Console</h4>
-<pre><code class="language-java">// necessary line to import the Scanner class
+<pre><code class="language-java">// make the Scanner class available for use
 import java.util.Scanner;
-public class scannerdemo{
+public class ScannerDemo{
     public static void main(String[] args){
         // create the Scanner object (called &quot;in&quot; for demo purposes)
         // &quot;System.in&quot; is the opposite of &quot;System.out&quot; and grabs input from the terminal/console
@@ -305,7 +305,7 @@ public class scannerdemo{
 </code></pre>
 <p>Example GIF: <br>
 <span style="color:white">. </span>
-<img src="/images/scannercrop.gif" height="375"></p>
+<img src="/images/scannergifnew.gif" height="393"></p>
 <p>Note that Scanner can be used for many data types, although you may need to convert/parse values.</p>
 <p>Check out this <a href="https://www.geeksforgeeks.org/scanner-class-in-java/" 
   
@@ -346,13 +346,13 @@ else{
 <h2 id="loops">Loops<a class="anchor" href="#loops">#</a></h2>
 <h3 id="for-loops">For Loops<a class="anchor" href="#for-loops">#</a></h3>
 <p>Syntax:</p>
-<pre><code class="language-java">for(statement1; statement2; statement3){
+<pre><code class="language-java">for(init; condition; update){
     // statements to be executed
 }
 </code></pre>
-<p><strong>statement1</strong>: executed once before everything else<br>
-<strong>statement2</strong>: the condition of the loop<br>
-<strong>statement3</strong>: executed every time the loop is iterated</p>
+<p><strong>init</strong>: executed once before everything else<br>
+<strong>condition</strong>: the condition of the loop<br>
+<strong>update</strong>: executed every time the loop is iterated</p>
 <p>Example:</p>
 <pre><code class="language-java">for(int i = 0; i &lt; 4; i++){
     System.out.println(i);
@@ -364,9 +364,9 @@ else{
 2
 3
 </code></pre>
-<p><strong>statement 1</strong>: declares/initializes a variable before the loop starts <code>int i = 0</code>.<br>
-<strong>statement 2</strong>: defines the condition for the loop to run (<code>i &lt; 4</code>). If the condition is true, the loop will iterate, if it is false, the loop will end.<br>
-<strong>statement 3</strong>: increases a value <code>i++</code> each time the code block in the loop has been executed.</p>
+<p><strong>init</strong>: declares/initializes a variable before the loop starts <code>int i = 0</code>.<br>
+<strong>condition</strong>: defines the condition for the loop to run (<code>i &lt; 4</code>). If the condition is true, the loop will iterate, if it is false, the loop will end.<br>
+<strong>update</strong>: increases a value <code>i++</code> each time the code block in the loop has been executed.</p>
 <p>During each iteration, the loop will print out the value of <code>i</code> which increments from <code>0</code> to <code>3</code>.</p>
 <p>Check out this <a href="https://www.w3schools.com/java/java_for_loop.asp" 
   
@@ -418,7 +418,7 @@ System.out.println(fruits[1]);
 <pre><code>apple
 lemon
 </code></pre>
-<p>Java Arrays uses <strong>zero-based indexing</strong> (starting from 0). The first element of an array can be accessed using the name of the Array then <code>[0]</code> as shown by line 2.</p>
+<p>Java Arrays are <strong>zero-indexed</strong> (starts counting from 0). The first element of an array can be accessed using the name of the Array then <code>[0]</code> as shown by line 2.</p>
 <p>In line 3, <code>fruits[1]</code> has the value <code>orange</code>, but was reassign it to <code>lemon</code>. In line 4, when we print the value of <code>fruits[1]</code>, the program prints <code>lemon</code>.</p>
 <p>You can treat each element of an Array as a variable and all specific properties of the corresponding data type still applies to Array elements.</p>
 <h3 id="looping-through-an-array">Looping through an Array<a class="anchor" href="#looping-through-an-array">#</a></h3>
