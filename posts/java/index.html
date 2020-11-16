@@ -446,7 +446,92 @@ banana
    target="_blank" rel="noreferrer noopener" 
 >article</a>
  for more on Arrays in Java.</p>
-<p><br><br></p>
+<h3 id="arraylist">ArrayList<a class="anchor" href="#arraylist">#</a></h3>
+<p>A Java ArrayList is a resizable array, found in the <code>java.util</code> package. ArrayLists are useful because unlike regular Arrays, there is no length limit. (If you want to add or remove elements from an array you have to create a new one).</p>
+<p>Syntax:</p>
+<pre><code class="language-java">import java.util.ArrayList;
+
+// creates an empty Integer ArrayList called 'list'
+ArrayList&lt;Integer&gt; list = new ArrayList&lt;Integer&gt;(); 
+// creates an empty String ArrayList called 'fruits'
+ArrayList&lt;String&gt; fruits = new ArrayList&lt;String&gt;();
+// add elements 
+fruits.add(&quot;apple&quot;);
+fruits.add(&quot;orange&quot;);
+fruits.add(&quot;pear&quot;);
+fruits.add(&quot;banana&quot;);
+
+// size (length) of an ArrayList
+System.out.println(fruits.size());
+
+// iterate through an ArrayList
+for(int i = 0; i &lt; fruits.size(); i++){
+    // prints each element
+    // fruits.get(i) grabs the element at index i 
+    System.out.println(fruits.get(i));
+}
+
+// remove elements
+// removes &quot;orange&quot;
+fruits.remove(1);
+
+// prints &quot;pear&quot; which is the new index 1
+System.out.println(fruits.get(1));
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-java">4
+apple
+orange
+pear
+banana
+pear
+</code></pre>
+<p>Check out this <a href="https://www.w3schools.com/java/java_arraylist.asp" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ and this <a href="https://usaco.guide/bronze/intro-ds" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on ArrayLists in Java.</p>
+<h3 id="2d-arrays">2d-Arrays<a class="anchor" href="#2d-arrays">#</a></h3>
+<p>A two dimensional Array in Java is simple an Array of Arrays. Elements are stored in rows and columns, similar to a spreadsheet or table.</p>
+<p>Syntax:</p>
+<pre><code class="language-java">// creates an empty 2 by 4 String 2d-array called 'arr'
+String[][] arr = new String[2][4];
+
+// modify elements (very similar to regular Arrays)
+arr[0][0] = &quot;test&quot;;
+System.out.println(arr[0][0]);
+
+// creates a 2 by 3 Integer 2d-array called 'nums'
+int[][] nums = { {1, 2, 3}, {4, 5, 6} };
+
+// iterating through a 2d array
+for(int i = 0; i &lt; nums.length; i++){           // nums.length = # of rows
+    for(int j = 0; j &lt; nums[i].length; j++){    // nums[i].length = # of columns
+        System.out.print(nums[i][j] + &quot; &quot;);     // prints the element and a space
+    }
+    System.out.println();                       // creates a new line
+}
+</code></pre>
+<p>Output:</p>
+<pre><code>test
+1 2 3
+4 5 6
+</code></pre>
+<p>Overall, 2d-Arrays are extremely similar to 1d-Arrays in Java. The main difference is that 2d-Arrays operate in a table or spreadsheet format, with rows first then columns.</p>
+<p>Check out this <a href="https://www.tutorialgateway.org/two-dimensional-array-in-java/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ and this <a href="https://www.java67.com/2014/10/how-to-create-and-initialize-two-dimensional-array-java-example.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on 2d-Arrays in Java.
+<br><br></p>
 <blockquote>
 <p>This is still a work in progress.<br>
 Created By: <em>WHS Computer Science Club Officers</em></p>
@@ -584,6 +669,8 @@ Created By: <em>WHS Computer Science Club Officers</em></p>
         <li><a href="#declaringinitializing">Declaring/Initializing</a></li>
         <li><a href="#accessing-elements-of-an-array">Accessing Elements of an Array</a></li>
         <li><a href="#looping-through-an-array">Looping through an Array</a></li>
+        <li><a href="#arraylist">ArrayList</a></li>
+        <li><a href="#2d-arrays">2d-Arrays</a></li>
       </ul>
     </li>
   </ul>
