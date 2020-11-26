@@ -120,6 +120,12 @@
 <p>The <code>print()</code> function print outs something in the console. ex: <code>Hello World</code></p>
 <pre><code class="language-python">print('Hello World')
 </code></pre>
+<p>To print multiple things, use a comma <code>,</code> if you want a space; or use <code>+</code> for no space.</p>
+<pre><code class="language-python">print('Bob', 'Joe')
+# prints Bob Joe
+print('Bob' + 'Joe')
+# prints BobJoe
+</code></pre>
 <p>Check out this <a href="https://realpython.com/python-print/" 
   
    target="_blank" rel="noreferrer noopener" 
@@ -160,11 +166,18 @@ print('Hello', x)
 Hello Bobby Joe             # program outputs &quot;Hello Bobby Joe&quot;
 </code></pre>
 <p>Note the <code>print()</code> function automatically added a <code>'space'</code> in between the <code>Hello</code> and <code>Bobby Joe</code></p>
+<p>Taking multiple inputs:
+To take multiple inputs at once, simply use the <code>split()</code> as shown below</p>
+<pre><code class="language-python">x, y = input(&quot;Enter two values: &quot;).split()
+# allows the user to input two values, one for x and one for y
+</code></pre>
 <p>Check out this <a href="https://pynative.com/python-input-function-get-user-input/" 
   
    target="_blank" rel="noreferrer noopener" 
 >article</a>
  for more on the Python <code>input()</code> function.</p>
+<h4 id="if-statements">If Statements</h4>
+<h4 id="for-loops">For Loops</h4>
 <p><br><br></p>
 <blockquote>
 <p>This is still a work in progress<br>
@@ -275,7 +288,11 @@ Created By: <em>WHS Computer Science Club Officers</em></p>
         <li></li>
       </ul>
     </li>
-    <li><a href="#input"><code>input()</code></a></li>
+    <li><a href="#input"><code>input()</code></a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
   </ul>
 </nav>
       </div>

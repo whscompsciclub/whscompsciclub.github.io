@@ -399,6 +399,92 @@ while(i &lt; 4){
    target="_blank" rel="noreferrer noopener" 
 >article</a>
  for more on while loops in Java.</p>
+<h3 id="break--continue-statements">Break &amp; Continue Statements<a class="anchor" href="#break--continue-statements">#</a></h3>
+<p>Break and Continue statements are &ldquo;jump&rdquo; statements that are used to skip statements in a loop or terminate a loop. These are most commonly used inside <a href="https://whscompsciclub.github.io/posts/java/#loops" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>loops</a>
+.</p>
+<h4 id="break-statement">Break Statement</h4>
+<p>A <code>break</code> statement is used to terminate a loop immediately. Once terminated, the program returns immediately to the first statement outside the loop.</p>
+<p>Below are two examples of break statements in a <a href="https://whscompsciclub.github.io/posts/java/#for-loops" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>for loop</a>
+ and a <a href="https://whscompsciclub.github.io/posts/java/#while-loops" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>while loop</a>
+.</p>
+<pre><code class="language-java">for(int i = 0; i &lt; 5; i++){
+    if(i == 3){
+        break;
+    }
+    System.out.println(i);
+}
+System.out.println(&quot;outside of the loop&quot;);
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-java">0
+1 
+2
+outside of the loop
+</code></pre>
+<pre><code class="language-java">int j = 0;
+while(true){    // will loop forever unless there's a break statement
+    if(j == 3){
+        break;
+    }
+    System.out.print(j);
+    j++;
+}
+System.out.println(&quot;outside of the loop&quot;);
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-java">0 
+1 
+2
+outside of the loop
+</code></pre>
+<h3 id="continue-statement">Continue Statement<a class="anchor" href="#continue-statement">#</a></h3>
+<p>A <code>continue</code> statement is used to skip the current iteration of a loop. Unlike a break statement, a continue statement does not terminate the loop.</p>
+<p>Below are two examples of continue statements in a <a href="http://localhost:1313/posts/java/#for-loops" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>for loop</a>
+ and a <a href="http://localhost:1313/posts/java/#while-loops" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>while loop</a>
+.</p>
+<pre><code class="language-java">for(int i = 0; i &lt; 3; i++){
+    if(i == 1){
+        continue;
+    }
+    System.out.println(i);
+}
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-java">0
+2
+</code></pre>
+<pre><code class="language-java">int j = 0;
+while(j &lt; 3){
+    if(j = 1){
+        continue;
+    }
+    System.out.println(j);
+}
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-java:">0
+2
+</code></pre>
+<p>Check out this <a href="https://www.geeksforgeeks.org/break-and-continue-statement-in-java/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on break and continue statements in Java.</p>
 <h2 id="arrays">Arrays<a class="anchor" href="#arrays">#</a></h2>
 <p>An array is a fixed-size sequential collection of elements of the same data type. Arrays are used to store collections of data.</p>
 <h3 id="declaringinitializing">Declaring/Initializing<a class="anchor" href="#declaringinitializing">#</a></h3>
@@ -666,6 +752,8 @@ Created By: <em>WHS Computer Science Club Officers</em></p>
       <ul>
         <li><a href="#for-loops">For Loops</a></li>
         <li><a href="#while-loops">While Loops</a></li>
+        <li><a href="#break--continue-statements">Break &amp; Continue Statements</a></li>
+        <li><a href="#continue-statement">Continue Statement</a></li>
       </ul>
     </li>
     <li><a href="#arrays">Arrays</a>
