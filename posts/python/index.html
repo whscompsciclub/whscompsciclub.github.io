@@ -176,8 +176,67 @@ To take multiple inputs at once, simply use the <code>split()</code> as shown be
    target="_blank" rel="noreferrer noopener" 
 >article</a>
  for more on the Python <code>input()</code> function.</p>
-<h4 id="if-statements">If Statements</h4>
-<h4 id="for-loops">For Loops</h4>
+<h2 id="if-statements">If Statements<a class="anchor" href="#if-statements">#</a></h2>
+<h4 id="logical-statements">Logical Statements</h4>
+<p>Python supports the usual logical conditions from mathematics:</p>
+<p>Equals: a == b
+Not Equals: a != b
+Less than: a &lt; b
+Less than or equal to: a &lt;= b
+Greater than: a &gt; b
+Greater than or equal to: a &gt;= b
+These conditions can be used in several ways, most commonly in &ldquo;if statements&rdquo; and loops.</p>
+<p>An &ldquo;if statement&rdquo; is written by using the if keyword.</p>
+<pre><code class="language-python">x = 75
+y = 100
+if y &gt; x:
+  print(&quot;y is greater than x&quot;)
+</code></pre>
+<h4 id="else-statements">Else Statements</h4>
+<p>Will run if the if statement is not satified</p>
+<pre><code class="language-python">x = 100
+y = 75
+if y &gt; x:
+  print(&quot;y is greater than x&quot;)
+else:
+  print(&quot;y is less than x&quot;)
+</code></pre>
+<h4 id="elif-statements">Elif Statements</h4>
+<p>The elif keyword is pythons way of saying &ldquo;if the previous conditions were not true, then try this condition&rdquo;.</p>
+<pre><code class="language-python">x = 100
+y = 75
+if y &gt; x:
+  print(&quot;y is greater than x&quot;)
+elif y == x:
+  print(&quot;y is equal to x&quot;)
+else:
+  print(&quot;y is less than x&quot;)
+</code></pre>
+<h4 id="calculator-activity">Calculator Activity</h4>
+<p>Using everything we&rsquo;ve learned so far, create a simple calculator with the following requirements
+Inputs:
+A number 1-4 to specify a function (addition, subtraction, multiplication, division)
+Two numbers on seperate linesto carry out the function on
+Output:
+The result from carrying out the function on the two numbers</p>
+<p>Solution Code:</p>
+<pre><code class="language-python">operation = int(input())
+num_1 = int(input())
+num_2 = int(input())
+if operation == 1:
+  print(num_1 + num_2)
+elif operation == 2:
+  print(num_1 - num_2)
+elif operation == 3:
+  print(num_1 * num_2)
+else operation == 4:
+  print(num_1 / num_2)
+</code></pre>
+<p>Check out this <a href="https://www.programiz.com/python-programming/if-elif-else" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on If Statements.</p>
 <p><br><br></p>
 <blockquote>
 <p>This is still a work in progress<br>
@@ -288,7 +347,8 @@ Created By: <em>WHS Computer Science Club Officers</em></p>
         <li></li>
       </ul>
     </li>
-    <li><a href="#input"><code>input()</code></a>
+    <li><a href="#input"><code>input()</code></a></li>
+    <li><a href="#if-statements">If Statements</a>
       <ul>
         <li></li>
       </ul>
