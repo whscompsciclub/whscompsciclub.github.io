@@ -179,21 +179,26 @@ To take multiple inputs at once, simply use the <code>split()</code> as shown be
 <h2 id="if-statements">If Statements<a class="anchor" href="#if-statements">#</a></h2>
 <h4 id="logical-statements">Logical Statements</h4>
 <p>Python supports the usual logical conditions from mathematics:</p>
-<h5 id="equals-a--b">Equals: a == b</h5>
-<h5 id="not-equals-a--b">Not Equals: a != b</h5>
-<h5 id="less-than-a--b">Less than: a &lt; b</h5>
-<h5 id="less-than-or-equal-to-a--b">Less than or equal to: a &lt;= b</h5>
-<h5 id="greater-than-a--b">Greater than: a &gt; b</h5>
-<h5 id="greater-than-or-equal-to-a--b">Greater than or equal to: a &gt;= b</h5>
+<ul>
+<li>Equals: <code>a == b</code></li>
+<li>Not Equals: <code>a != b</code></li>
+<li>Less than: <code>a &lt; b</code></li>
+<li>Less than or equal to: <code>a &lt;= b</code></li>
+<li>Greater than: <code>a &gt; b</code></li>
+<li>Greater than or equal to: <code>a &gt;= b</code></li>
+</ul>
 <p>These conditions can be used in several ways, most commonly in &ldquo;if statements&rdquo; and loops.</p>
-<p>An &ldquo;if statement&rdquo; is written by using the if keyword.</p>
+<p>An &ldquo;if statement&rdquo; is written by using the <code>if</code> keyword.</p>
 <pre><code class="language-python">x = 75
 y = 100
 if y &gt; x:
   print(&quot;y is greater than x&quot;)
 </code></pre>
+<p>Output:</p>
+<pre><code>y is greater than x
+</code></pre>
 <h4 id="else-statements">Else Statements</h4>
-<p>Will run if the if statement is not satified</p>
+<p>Will execute if the &ldquo;if statement&rdquo; is not satisfied (<code>true</code>)</p>
 <pre><code class="language-python">x = 100
 y = 75
 if y &gt; x:
@@ -201,10 +206,13 @@ if y &gt; x:
 else:
   print(&quot;y is less than x&quot;)
 </code></pre>
+<p>Output:</p>
+<pre><code>y is less than x
+</code></pre>
 <h4 id="elif-statements">Elif Statements</h4>
-<p>The elif keyword is pythons way of saying &ldquo;if the previous conditions were not true, then try this condition&rdquo;.</p>
+<p>The <code>elif</code> keyword, also knows as &ldquo;else if&rdquo;, is pythons way of saying &ldquo;if the previous conditions were not true, then try this condition&rdquo;.</p>
 <pre><code class="language-python">x = 100
-y = 75
+y = 100
 if y &gt; x:
   print(&quot;y is greater than x&quot;)
 elif y == x:
@@ -212,14 +220,37 @@ elif y == x:
 else:
   print(&quot;y is less than x&quot;)
 </code></pre>
-<h4 id="calculator-activity">Calculator Activity</h4>
+<p>Output:</p>
+<pre><code>y is equal to x
+</code></pre>
+<h4 id="calculator-activityhttpswwwhackerrankcomcontestssms-comp-sci-clubchallenges3-basic-calculator"><a href="https://www.hackerrank.com/contests/sms-comp-sci-club/challenges/3-basic-calculator" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Calculator Activity</a>
+</h4>
 <p>Using everything we&rsquo;ve learned so far, create a simple calculator with the following requirements</p>
-<h5 id="inputs">Inputs:</h5>
-<p>A number 1-4 to specify a function (addition, subtraction, multiplication, division)</p>
-<p>Two numbers on seperate lines to carry out the function on</p>
-<h5 id="output">Output:</h5>
+<h4 id="input-1">Input:</h4>
+<ul>
+<li>First Line: a number <code>1-4</code> to specify a mathematical function
+<ul>
+<li><code>1</code>: addition</li>
+<li><code>2</code>: subtraction</li>
+<li><code>3</code>: multiplication</li>
+<li><code>4</code>: division</li>
+</ul>
+</li>
+<li>Second Line: <code>num_1</code></li>
+<li>Next Line: <code>num_2</code></li>
+</ul>
+<h4 id="constraints">Constraints:</h4>
+<ul>
+<li><code>num_1</code> &amp; <code>num_2</code> are <strong>integers</strong></li>
+<li><code>-100</code> &lt; <code>num_1</code> &lt; <code>100</code></li>
+<li><code>-100</code> &lt; <code>num_2</code> &lt; <code>100</code></li>
+</ul>
+<h4 id="output">Output:</h4>
 <p>The result from carrying out the function on the two numbers</p>
-<p>Solution Code:</p>
+<h4 id="solution-code">Solution Code:</h4>
 <pre><code class="language-python">operation = int(input())
 num_1 = int(input())
 num_2 = int(input())
@@ -232,7 +263,7 @@ elif operation == 3:
 else:
   print(num_1 / num_2)
 </code></pre>
-<p>Here is the solution code to the more accessible calculator we talked about in class.</p>
+<p>Here is the solution code to the bonus problem we talked about in class.</p>
 <pre><code class="language-python">operation = int(input(&quot;Enter 1 for addition, 2 for subtraction, 3 for multiplication, and 4 for division: &quot;))
 
 if operation != 1 and operation != 2 and operation != 3 and operation != 4:
@@ -252,14 +283,17 @@ elif operation == 3:
 
 else:
     print(&quot;The quotient is&quot;, num_1 / num_2)
-    ```
-
-Check out this [article](https://www.programiz.com/python-programming/if-elif-else) for more on If Statements.
-
-&lt;br&gt;&lt;br&gt;
-&gt; This is still a work in progress  
-&gt; Created By: *WHS Computer Science Club Officers*
 </code></pre>
+<p>Check out this <a href="https://www.programiz.com/python-programming/if-elif-else" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on if statements in Python.</p>
+<p><br><br></p>
+<blockquote>
+<p>This is still a work in progress<br>
+Created By: <em>WHS Computer Science Club Officers</em></p>
+</blockquote>
 
 
               
