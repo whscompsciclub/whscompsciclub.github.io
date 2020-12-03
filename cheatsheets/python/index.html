@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Python Cheatsheet | WHS Comp. Sci. Club</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Python Cheatsheet" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="https://twitter.com/whscompsciclub" />
+  <meta name="twitter:creator" content="https://twitter.com/whscompsciclub" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.994a1438c47f2f27fdac1037328425b17f5bc66992d96ab217c876a4d079a883.css" integrity="sha256-mUoUOMR/Lyf9rBA3MoQlsX9bxmmS2WqyF8h2pNB5qIM="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    { 
+      "@context": "http://schema.org", 
+      "@type": "WebSite", 
+      "url": "https:\/\/whscompsciclub.github.io\/cheatsheets\/python\/",
+      "name": "Python Cheatsheet",
+      "author": {
+        "@type": "Person",
+        "name": ""
+      },
+      "description": ""
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">about</a>
+      </li>
+    
+      <li>
+        <a  href="/usaco">usaco</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/cheatsheets">cheatsheets</a>
+      </li>
+    
+      <li>
+        <a  href="/posts">posts</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Python Cheatsheet</h1>
+            <time datetime="2020-11-07 00:00:00 -0800 PST" class="post__date">Nov 7, 2020</time> 
+          </header>
+          <article class="post__content">
+              
+<h2 id="python-syntax">Python Syntax<a class="anchor" href="#python-syntax">#</a></h2>
+<h4 id="files">Files</h4>
+<p>All Python files &amp; programs have the <code>.py</code> ending. ex: <code>main.py</code></p>
+<h4 id="comments">Comments</h4>
+<p>Comments are used to help understand a piece of code. Comments are ignored by the compiler and are human-readable words intended to make the code more readable.</p>
+<pre><code class="language-python"># this is an example comment
+</code></pre>
+<h4 id="indentation--colons">Indentation &amp; Colons</h4>
+<p>While most programming languages use brackets <code>{ }</code> to define blocks of code, Python uses indentation and colons <code>:</code> instead. Lastly, unlike other languages like Java, Python does not require semicolons <code>;</code> at the end of each line.</p>
+<p>Check out this <a href="https://www.programiz.com/python-programming/statement-indentation-comments" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on comments and indentation in Python.</p>
+<h2 id="print"><code>print()</code><a class="anchor" href="#print">#</a></h2>
+<p>The <code>print()</code> function print outs something in the console. ex: <code>Hello World</code></p>
+<pre><code class="language-python">print('Hello World')
+</code></pre>
+<p>To print multiple things, use a comma <code>,</code> if you want a space; or use <code>+</code> for no space.</p>
+<pre><code class="language-python">print('Bob', 'Joe')
+# prints Bob Joe
+print('Bob' + 'Joe')
+# prints BobJoe
+</code></pre>
+<p>Check out this <a href="https://realpython.com/python-print/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on print statements in Python.</p>
+<h2 id="variables">Variables<a class="anchor" href="#variables">#</a></h2>
+<p>Variables are containers for storing data values. Unlike other programming languages, Python does not require variable declaration. A variable is created the moment you first assign a value to it.</p>
+<h4 id="integer">Integer</h4>
+<p>An Integer is a whole number with no decimal points. Examples of integers are: <code>22</code>, <code>-14</code>, <code>39</code></p>
+<pre><code class="language-python">x = 5
+print(x)
+</code></pre>
+<p>In this example, the integer variable <code>x</code> has been assigned the value of <code>5</code> and the program will print out <code>5</code> when run.</p>
+<h4 id="string">String</h4>
+<p>A String is a sequence of characters that typically represents text. Examples of Strings are: <code>Hello</code>, <code>Python</code>, <code>the brown fox jumps over the lazy dog</code></p>
+<pre><code class="language-python">y = &quot;John&quot;
+print(y)
+</code></pre>
+<p>In this example, the String variable <code>y</code> has been assigned the value of <code>John</code> and the program will print <code>John</code> when run.</p>
+<h4 id="boolean">Boolean</h4>
+<p>A Boolean represents either <code>True</code> or <code>False</code> and is used in logic computing.</p>
+<pre><code class="language-python">z = True
+print(z)
+</code></pre>
+<p>In this example, the Boolean variable <code>z</code> has been assigned the value of <code>True</code> and the program will print <code>True</code> when run.</p>
+<p>Check out this <a href="https://realpython.com/python-data-types/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on variables in Python.</p>
+<h2 id="input"><code>input()</code><a class="anchor" href="#input">#</a></h2>
+<p>the <code>input()</code> function gets the the users input</p>
+<pre><code class="language-python">x = input('Enter your name:')
+print('Hello', x)
+</code></pre>
+<p>Input/Output:</p>
+<pre><code class="language-python">Enter your name: Bobby Joe  # user inputs &quot;Bobby Joe&quot;
+Hello Bobby Joe             # program outputs &quot;Hello Bobby Joe&quot;
+</code></pre>
+<p>Note the <code>print()</code> function automatically added a <code>'space'</code> in between the <code>Hello</code> and <code>Bobby Joe</code></p>
+<p>Taking multiple inputs:
+To take multiple inputs at once, simply use the <code>split()</code> as shown below</p>
+<pre><code class="language-python">x, y = input(&quot;Enter two values: &quot;).split()
+# allows the user to input two values, one for x and one for y
+</code></pre>
+<p>Check out this <a href="https://pynative.com/python-input-function-get-user-input/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on the Python <code>input()</code> function.</p>
+<h2 id="if-statements">If Statements<a class="anchor" href="#if-statements">#</a></h2>
+<h4 id="logical-statements">Logical Statements</h4>
+<p>Python supports the usual logical conditions from mathematics:</p>
+<ul>
+<li>Equals: <code>a == b</code></li>
+<li>Not Equals: <code>a != b</code></li>
+<li>Less than: <code>a &lt; b</code></li>
+<li>Less than or equal to: <code>a &lt;= b</code></li>
+<li>Greater than: <code>a &gt; b</code></li>
+<li>Greater than or equal to: <code>a &gt;= b</code></li>
+</ul>
+<p>These conditions can be used in several ways, most commonly in &ldquo;if statements&rdquo; and loops.</p>
+<p>An &ldquo;if statement&rdquo; is written by using the <code>if</code> keyword.</p>
+<pre><code class="language-python">x = 75
+y = 100
+if y &gt; x:
+  print(&quot;y is greater than x&quot;)
+</code></pre>
+<p>Output:</p>
+<pre><code>y is greater than x
+</code></pre>
+<h4 id="else-statements">Else Statements</h4>
+<p>Will execute if the &ldquo;if statement&rdquo; is not satisfied (<code>true</code>)</p>
+<pre><code class="language-python">x = 100
+y = 75
+if y &gt; x:
+  print(&quot;y is greater than x&quot;)
+else:
+  print(&quot;y is less than x&quot;)
+</code></pre>
+<p>Output:</p>
+<pre><code>y is less than x
+</code></pre>
+<h4 id="elif-statements">Elif Statements</h4>
+<p>The <code>elif</code> keyword, also knows as &ldquo;else if&rdquo;, is pythons way of saying &ldquo;if the previous conditions were not true, then try this condition&rdquo;.</p>
+<pre><code class="language-python">x = 100
+y = 100
+if y &gt; x:
+  print(&quot;y is greater than x&quot;)
+elif y == x:
+  print(&quot;y is equal to x&quot;)
+else:
+  print(&quot;y is less than x&quot;)
+</code></pre>
+<p>Output:</p>
+<pre><code>y is equal to x
+</code></pre>
+<h4 id="calculator-activityhttpswwwhackerrankcomcontestssms-comp-sci-clubchallenges3-basic-calculator"><a href="https://www.hackerrank.com/contests/sms-comp-sci-club/challenges/3-basic-calculator" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Calculator Activity</a>
+</h4>
+<p>Using everything we&rsquo;ve learned so far, create a simple calculator with the following requirements</p>
+<h4 id="input-1">Input:</h4>
+<ul>
+<li>First Line: a number <code>1-4</code> to specify a mathematical function
+<ul>
+<li><code>1</code>: addition</li>
+<li><code>2</code>: subtraction</li>
+<li><code>3</code>: multiplication</li>
+<li><code>4</code>: division</li>
+</ul>
+</li>
+<li>Second Line: <code>num_1</code></li>
+<li>Next Line: <code>num_2</code></li>
+</ul>
+<h4 id="constraints">Constraints:</h4>
+<ul>
+<li><code>num_1</code> &amp; <code>num_2</code> are <strong>integers</strong></li>
+<li><code>-100</code> &lt; <code>num_1</code> &lt; <code>100</code></li>
+<li><code>-100</code> &lt; <code>num_2</code> &lt; <code>100</code></li>
+</ul>
+<h4 id="output">Output:</h4>
+<p>The result from carrying out the function on the two numbers</p>
+<h4 id="solution-code">Solution Code:</h4>
+<pre><code class="language-python">operation = int(input())
+num_1 = int(input())
+num_2 = int(input())
+if operation == 1:
+  print(num_1 + num_2)
+elif operation == 2:
+  print(num_1 - num_2)
+elif operation == 3:
+  print(num_1 * num_2)
+else:
+  print(num_1 / num_2)
+</code></pre>
+<p>Here is the solution code to the bonus problem we talked about in class.</p>
+<pre><code class="language-python">operation = int(input(&quot;Enter 1 for addition, 2 for subtraction, 3 for multiplication, and 4 for division: &quot;))
+
+if operation != 1 and operation != 2 and operation != 3 and operation != 4:
+    print(&quot;The number you entered does not match an operation&quot;)
+    
+num_1 = int(input(&quot;Enter first number: &quot;))
+num_2 = int(input(&quot;Enter second number: &quot;))
+
+if operation == 1:
+    print(&quot;The sum is&quot;, num_1 + num_2)
+
+elif operation == 2:
+    print(&quot;The difference is&quot;, num_1 - num_2)
+
+elif operation == 3:
+    print(&quot;The product is&quot;, num_1 * num_2)
+
+else:
+    print(&quot;The quotient is&quot;, num_1 / num_2)
+</code></pre>
+<p>Check out this <a href="https://www.programiz.com/python-programming/if-elif-else" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on if statements in Python.</p>
+<p><br><br></p>
+<blockquote>
+<p>This is still a work in progress<br>
+Created By: <em>WHS Computer Science Club Officers</em></p>
+</blockquote>
+
+
+              
+          </article>
+          
+
+ <div class="pagination">
+  
+
+  
+    <a class="pagination__item" href="https://whscompsciclub.github.io/cheatsheets/java/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >Java Cheatsheet</span>
+    </a>
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Email"
+         href="mailto:whscompsciclub@gmail.com"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://whscompsciclub.github.io/svg/email.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="GitHub"
+         href="https://github.com/whscompsciclub"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://whscompsciclub.github.io/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Facebook"
+         href="https://facebook.com/whscompsciclub"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://whscompsciclub.github.io/svg/facebook.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Instagram"
+         href="https://instagram.com/whscompsciclub"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://whscompsciclub.github.io/svg/instagram.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="YouTube"
+         href="https://www.youtube.com/channel/UCyWeApsYIEdXetkFHjEiqZA"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://whscompsciclub.github.io/svg/youtube.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Twitter"
+         href="https://twitter.com/whscompsciclub"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://whscompsciclub.github.io/svg/twitter.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>CC-BY-NC-SA 4.0 | WHS CSC 2020</p>
+          </footer>
+          </div>
+      </div>
+      
+      <div class="toc-container">
+          
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#python-syntax">Python Syntax</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#print"><code>print()</code></a></li>
+    <li><a href="#variables">Variables</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#input"><code>input()</code></a></li>
+    <li><a href="#if-statements">If Statements</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+    <script src="/js/table-of-contents.js"></script>
+  
+
+
+</body>
+
+</html>

@@ -7,13 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>CC-BY-NC-SA 4.0 | WHS CSC {year}</copyright>
-    <lastBuildDate>Sat, 07 Nov 2020 00:00:00 -0800</lastBuildDate><atom:link href="https://whscompsciclub.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 -0800</lastBuildDate><atom:link href="https://whscompsciclub.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Time Complexity</title>
+      <link>https://whscompsciclub.github.io/usaco/time-complexity/</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 -0800</pubDate>
+      
+      <guid>https://whscompsciclub.github.io/usaco/time-complexity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Brute Force</title>
+      <link>https://whscompsciclub.github.io/usaco/brute-force/</link>
+      <pubDate>Wed, 02 Dec 2020 00:00:00 -0800</pubDate>
+      
+      <guid>https://whscompsciclub.github.io/usaco/brute-force/</guid>
+      <description>What is Brute Forcing? A brute-force problem is exactly what it sounds like: simply doing everything possible to eventually reach the answer. Let&amp;rsquo;s say you were trying to achieve the password to someone&amp;rsquo;s phone (assume 4 digits from 0 to 9). A brute force solution would be to try every single password possible. This way, it is guaranteed that at one point, the answer would be correct.  Pros  Easy/Uncomplicated Guarantees a solution   Cons  Inefficient Not suitable for every problem    Brute Force in the USACO  It is almost guaranteed that there will be at least one brute force problem in a USACO Bronze contest, and sometimes there will be 2 (and rarely 3).</description>
+    </item>
+    
     <item>
       <title>Java Cheatsheet</title>
-      <link>https://whscompsciclub.github.io/posts/java/</link>
+      <link>https://whscompsciclub.github.io/cheatsheets/java/</link>
       <pubDate>Sat, 07 Nov 2020 00:00:00 -0800</pubDate>
       
-      <guid>https://whscompsciclub.github.io/posts/java/</guid>
+      <guid>https://whscompsciclub.github.io/cheatsheets/java/</guid>
       <description>Java Syntax Files All Java files &amp;amp; programs have the .java ending. ex: HelloWorld.java
 Comments Comments are used to help understand a piece of code. Comments are ignored by the compiler and are human-readable words intended to make the code more readable.
 // this is an example comment /* this is a multilineexample comment */ Brackets and Semicolons Java uses braces { } to define blocks of code.</description>
@@ -21,10 +39,10 @@ Comments Comments are used to help understand a piece of code. Comments are igno
     
     <item>
       <title>Python Cheatsheet</title>
-      <link>https://whscompsciclub.github.io/posts/python/</link>
+      <link>https://whscompsciclub.github.io/cheatsheets/python/</link>
       <pubDate>Sat, 07 Nov 2020 00:00:00 -0800</pubDate>
       
-      <guid>https://whscompsciclub.github.io/posts/python/</guid>
+      <guid>https://whscompsciclub.github.io/cheatsheets/python/</guid>
       <description>Python Syntax Files All Python files &amp;amp; programs have the .py ending. ex: main.py
 Comments Comments are used to help understand a piece of code. Comments are ignored by the compiler and are human-readable words intended to make the code more readable.
 # this is an example comment Indentation &amp;amp; Colons While most programming languages use brackets { } to define blocks of code, Python uses indentation and colons : instead.</description>

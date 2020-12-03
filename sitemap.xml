@@ -4,22 +4,42 @@
   
   <url>
     <loc>https://whscompsciclub.github.io/</loc>
+    <lastmod>2020-12-03T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://whscompsciclub.github.io/usaco/time-complexity/</loc>
+    <lastmod>2020-12-03T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://whscompsciclub.github.io/usaco/</loc>
+    <lastmod>2020-12-03T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://whscompsciclub.github.io/usaco/brute-force/</loc>
+    <lastmod>2020-12-02T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://whscompsciclub.github.io/cheatsheets/</loc>
     <lastmod>2020-11-07T00:00:00-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://whscompsciclub.github.io/posts/java/</loc>
+    <loc>https://whscompsciclub.github.io/cheatsheets/java/</loc>
+    <lastmod>2020-11-07T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://whscompsciclub.github.io/cheatsheets/python/</loc>
     <lastmod>2020-11-07T00:00:00-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://whscompsciclub.github.io/posts/</loc>
-    <lastmod>2020-11-07T00:00:00-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://whscompsciclub.github.io/posts/python/</loc>
-    <lastmod>2020-11-07T00:00:00-08:00</lastmod>
+    <lastmod>2020-11-05T00:00:00-08:00</lastmod>
   </url>
   
   <url>
