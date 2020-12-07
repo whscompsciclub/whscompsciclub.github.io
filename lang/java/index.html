@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Java Cheatsheet | WHS Comp. Sci. Club</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Java Cheatsheet" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="https://twitter.com/whscompsciclub" />
+  <meta name="twitter:creator" content="https://twitter.com/whscompsciclub" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.994a1438c47f2f27fdac1037328425b17f5bc66992d96ab217c876a4d079a883.css" integrity="sha256-mUoUOMR/Lyf9rBA3MoQlsX9bxmmS2WqyF8h2pNB5qIM="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    { 
+      "@context": "http://schema.org", 
+      "@type": "WebSite", 
+      "url": "https:\/\/whscompsciclub.github.io\/lang\/java\/",
+      "name": "Java Cheatsheet",
+      "author": {
+        "@type": "Person",
+        "name": ""
+      },
+      "description": ""
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">about</a>
+      </li>
+    
+      <li>
+        <a  href="/usaco">usaco</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/lang">lang</a>
+      </li>
+    
+      <li>
+        <a  href="/posts">posts</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Java Cheatsheet</h1>
+            <time datetime="2020-11-07 00:00:00 -0800 PST" class="post__date">Nov 7, 2020</time> 
+          </header>
+          <article class="post__content">
+              
+<h2 id="java-syntax">Java Syntax<a class="anchor" href="#java-syntax">#</a></h2>
+<h3 id="files">Files<a class="anchor" href="#files">#</a></h3>
+<p>All Java files &amp; programs have the <code>.java</code> ending. ex: <code>HelloWorld.java</code></p>
+<h3 id="comments">Comments<a class="anchor" href="#comments">#</a></h3>
+<p>Comments are used to help understand a piece of code. Comments are ignored by the compiler and are human-readable words intended to make the code more readable.</p>
+<pre><code class="language-java">// this is an example comment
+</code></pre>
+<pre><code class="language-java">/* this is 
+a multiline
+example comment */
+</code></pre>
+<h3 id="brackets-and-semicolons">Brackets and Semicolons<a class="anchor" href="#brackets-and-semicolons">#</a></h3>
+<p>Java uses braces <code>{ }</code> to define blocks of code. A block is typically a group of statements. Java also requires semicolons <code>;</code> at the end of each statement (the basic building block of many programming languages).</p>
+<h3 id="class-declaration--main-method">Class Declaration &amp; <code>main()</code> Method<a class="anchor" href="#class-declaration--main-method">#</a></h3>
+<p>Example Class &amp; Main Method:</p>
+<pre><code class="language-java">public class HelloWorld{
+    public static void main(String[] args){
+               
+    }
+}
+</code></pre>
+<p>Java code must be run inside a <code>class</code> and the filename must match the class name. In our example, the filename would be <code>HelloWorld.java</code> to match the class name of <code>HelloWorld</code>.<br>
+<strong>Note</strong>: Java is case-sensitive: <code>HelloWorld</code> is not the same as <code>helloWorld</code></p>
+<p>The second line is our <code>main()</code> method and will also be found in every Java program. When you run a Java application, the <code>main()</code> method is where the programThere is no need to understand it for now, just memorize it and remember that each Java program will have a <code>class</code> name matching the filename as well as a <code>main()</code> method.</p>
+<p>Check out this <a href="https://www.protechtraining.com/content/java_fundamentals_tutorial-hello_world" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on files, comments, class declarations, <code>main()</code> methods, keywords &amp; literals, and more in Java.</p>
+<h2 id="print-statement">Print Statement<a class="anchor" href="#print-statement">#</a></h2>
+<p>Java&rsquo;s <code>System.out.print()</code> prints out something in the console. ex: <code>Hello!</code></p>
+<h3 id="difference-between-print-and-println">Difference between <code>print()</code> and <code>println()</code><a class="anchor" href="#difference-between-print-and-println">#</a></h3>
+<ul>
+<li><code>System.out.print()</code>: Prints the text on the console and the <strong>cursor remains at the end of the text</strong>, the next print statement will start from here.</li>
+<li><code>System.out.println()</code>: Prints the text on the console and the <strong>cursor moves to the start of the next line</strong> at the console, the next print statement will start from here. (more commonly used)</li>
+</ul>
+<pre><code class="language-Java">System.out.print(&quot;Hello &quot;);
+System.out.println(&quot;World&quot;);
+System.out.println(&quot;Java is cool!&quot;);
+System.out.println(&quot;Remember your semicolons!!!&quot;);
+</code></pre>
+<p>Output:</p>
+<pre><code>Hello World
+Java is cool!
+Remember your semicolons!!!
+</code></pre>
+<p><code>World</code> is printed on the same line as <code>Hello </code> because the first print statement is a <code>print()</code> not <code>println()</code>.</p>
+<p>Check out this <a href="https://www.geeksforgeeks.org/system-out-println-in-java/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on print statements in Java.</p>
+<h2 id="variables">Variables<a class="anchor" href="#variables">#</a></h2>
+<p>Variables are containers for storing data values. In Java, 3 commonly used terms when refering to variables are <strong>declaration</strong>, <strong>assignment</strong>, and <strong>initialization</strong>.</p>
+<ul>
+<li><strong>declaration</strong>: states the type of a variable, along with its name. A variable cannot be declared multiple times and must be declared before reading or assigning values to a variable.</li>
+<li><strong>assignment</strong>: replacing the old value of a variable with a new one</li>
+<li><strong>initialization</strong>: the first time a value is assigned to a variable. Can be done with declaration.</li>
+</ul>
+<h3 id="data-types">Data Types<a class="anchor" href="#data-types">#</a></h3>
+<h4 id="integer">Integer</h4>
+<p>An Integer or an <code>int</code> is a whole number with no decimal points. Examples of integers are: <code>22</code>, <code>-14</code>, <code>39</code></p>
+<pre><code class="language-Java">int x = 5;
+System.out.println(x);
+</code></pre>
+<p>In this example, the integer variable <code>x</code> has been assigned the value of <code>5</code> and the program will print out <code>5</code> when run.</p>
+<h4 id="string">String</h4>
+<p>A <code>String</code> is a sequence of characters that typically represents text. Examples of Strings are: <code>Hello</code>, <code>Python</code>, <code>the brown fox jumps over the lazy dog</code></p>
+<pre><code class="language-Java">String y = &quot;John&quot;;
+System.out.println(y);
+</code></pre>
+<p>In this example. the String variable <code>y</code> has been assigned the value of <code>John</code> and the program will print <code>John</code> when run.</p>
+<h4 id="boolean">Boolean</h4>
+<p>A <code>boolean</code> represents either <code>true</code> or <code>false</code> and is used in logic computing.</p>
+<pre><code class="language-Java">boolean z = true;
+System.out.println(z);
+</code></pre>
+<p>Check out this <a href="https://www.w3schools.com/java/java_variables.asp" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on variables in Java.</p>
+<h2 id="convertingparsing-arguments">Converting/Parsing Arguments<a class="anchor" href="#convertingparsing-arguments">#</a></h2>
+<p>String to Integer</p>
+<pre><code class="language-java">String a = &quot;123&quot;;
+int b = Integer.parseInt(a);
+System.out.println(b + 2);
+</code></pre>
+<p>To convert from one data type to another, the most common way is to use <code>parse</code>. There are also many other ways to convert; to convert to a String, we&rsquo;d most commonly use <code>toString()</code>.</p>
+<p>Check out this <a href="https://www.educba.com/conversion-in-java/?source=leftnav" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ and this <a href="https://www.educba.com/type-conversion-in-java/?source=leftnav" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on converting/parsing in Java.</p>
+<h2 id="operators">Operators<a class="anchor" href="#operators">#</a></h2>
+<h3 id="regular-arithmetic--expressions">Regular Arithmetic  Expressions<a class="anchor" href="#regular-arithmetic--expressions">#</a></h3>
+<ul>
+<li>addition: <code>+</code></li>
+<li>subtraction: <code>-</code></li>
+<li>multiplication: <code>*</code></li>
+<li>division: <code>/</code></li>
+<li>modulus (a.k.a <em>remainder</em>): <code>%</code></li>
+</ul>
+<p>Example:</p>
+<pre><code class="language-java">System.out.println(1 + 3 / 2 * 10 % 5 - 2);
+// output: -1
+</code></pre>
+<p>Because of Order of Operations and P.E.M.D.A.S., first we do <code>3/2</code> which is equal to <code>1</code> because Java Integers do not support decimals. To read more about Integers and decimals check out this <a href="https://www.cs.umd.edu/~clin/MoreJava/Intro/expr-int-div.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+. <code>1 * 10</code> is equal to <code>10</code> and <code>10 % 5</code> is equal to <code>0</code> (there&rsquo;s no remainder). Lastly, <code>1 + 0 - 2</code> is equal to <code>-1</code>.</p>
+<h3 id="compound-arithmetic-assignment-operators">Compound Arithmetic Assignment Operators<a class="anchor" href="#compound-arithmetic-assignment-operators">#</a></h3>
+<ul>
+<li>compound addition: <code>+=</code></li>
+<li>compound subtraction: <code>-=</code></li>
+<li>compound multiplication: <code>*=</code></li>
+<li>compound division: <code>/=</code></li>
+<li>compound modulo: <code>%=</code></li>
+</ul>
+<p>Example:</p>
+<pre><code class="language-java">int a = 3;
+a += 5;
+System.out.println(a);
+// output: 8
+</code></pre>
+<p>In line 2, the expression <code>a += 5</code> is shorthand for <code>a = a + 5</code>, which is why the output is <code>8</code> (<code>3 + 5 = 8</code>)</p>
+<h3 id="incrementdecrement">Increment/Decrement<a class="anchor" href="#incrementdecrement">#</a></h3>
+<ul>
+<li>increment: <code>++</code></li>
+<li>decrement: <code>--</code></li>
+</ul>
+<p>Example:</p>
+<pre><code class="language-java">int b = 2;
+b++;
+System.out.println(b);
+b--;
+b--;
+System.out.println(b);
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-java">3
+1 
+</code></pre>
+<p>Increment <code>++</code> and Decrement <code>--</code> are both shorthand for <code>+= 1</code> and <code>-= 1</code>.<br>
+In line 2, <code>b++</code> increments <code>b</code> by 1, assigning the value of <code>3</code> to <code>b</code>.<br>
+In lines 4 and 5, <code>b--</code> decrements <code>b</code> by 1, assigning the value of <code>2</code> then <code>1</code> to <code>b</code>.</p>
+<h3 id="comparison-operators">Comparison Operators<a class="anchor" href="#comparison-operators">#</a></h3>
+<ul>
+<li>equal: <code>==</code></li>
+<li>not equal: <code>!=</code></li>
+<li>less than: <code>&lt;</code></li>
+<li>less than or equal: <code>&lt;=</code></li>
+<li>greater than: <code>&gt;</code></li>
+<li>greater than or equal: <code>&gt;=</code></li>
+<li>or: <code>||</code></li>
+<li>and: <code>&amp;&amp;</code></li>
+</ul>
+<p>Example:</p>
+<pre><code class="language-java">System.out.println(2 &lt;= 3);
+System.out.println((2 != 3) || (6 &gt; 6));
+System.out.println((10 == 6) &amp;&amp; (3 &lt; 7));
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-java">true
+true
+false
+</code></pre>
+<p>The first line is <code>true</code> because <code>2</code> is less than or equal to <code>3</code>.<br>
+The second line is <code>true</code> because <code>2</code> is not equal to <code>3</code> even though <code>6</code> is NOT greater than <code>6</code>. Note that only one of the conditions have to be true in an or <code>||</code> comparison.<br>
+The third line is <code>false</code> because <code>10</code> is not equal to <code>6</code> even though <code>3</code> IS less than <code>7</code>. Note that because only one of the conditions is true, the output is still false because it is an and <code>&amp;&amp;</code> comparison.</p>
+<p>Check out this <a href="https://www.geeksforgeeks.org/operators-in-java/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on Operators in Java.</p>
+<h2 id="scanner-user-input">Scanner (User Input)<a class="anchor" href="#scanner-user-input">#</a></h2>
+<p>Scanner is a Java class in the <code>java.util</code> package to obtain input. It&rsquo;s the easiest way to read input, but not the most efficient.</p>
+<h4 id="reading-input-from-the-console">Reading Input from the Console</h4>
+<pre><code class="language-java">// make the Scanner class available for use
+import java.util.Scanner;
+public class ScannerDemo{
+    public static void main(String[] args){
+        // create the Scanner object (called &quot;in&quot; for demo purposes)
+        // &quot;System.in&quot; is the opposite of &quot;System.out&quot; and grabs input from the terminal/console
+        Scanner in = new Scanner(System.in);
+        
+        // user inputs an integer and is stored in variable n 
+        // n is a regular integer variable and can be modified like normal
+        int n = in.nextInt();
+
+        // prints the value
+        // should be the same as the user input 
+        System.out.println(n);
+    }
+}
+</code></pre>
+<p>Example GIF: <br>
+<span style="color:white">. </span>
+<img src="/images/scannergifnew.gif" height="393"></p>
+<p>Note that Scanner can be used for many data types, although you may need to convert/parse values.</p>
+<p>Check out this <a href="https://www.geeksforgeeks.org/scanner-class-in-java/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on the Scanner class in Java.</p>
+<h2 id="if-statements">If Statements<a class="anchor" href="#if-statements">#</a></h2>
+<p>Syntax:</p>
+<pre><code class="language-java">if(expression){
+    // statements to be executed if the boolean expression is true
+}
+else if(expression){
+    // statements to be executed if the boolean expression is true
+}
+else{
+    // statements to be executed if the above boolean expressions are false
+}
+</code></pre>
+<p>Example:</p>
+<pre><code class="language-java">int hour = 5;
+if(hour != 10){
+    System.out.println(&quot;The hour is not 10!&quot;);
+}
+else if(hour &lt; 5){
+    System.out.println(&quot;The hour is less than 5!&quot;);
+}
+else{
+    System.out.println(&quot;The hour is 10 OR greater than or equal to 5!&quot;);
+}
+// Output: The hour is 10 OR greater than or equal to 5!
+</code></pre>
+<p>The first two boolean expressions are false, therefore the else statement is executed and <code>The hour is 10 OR greater than or equal to 5!</code> is printed. If the first or second boolean expressions were true, the first or second code blocks would have been executed properly.</p>
+<p>Check out this <a href="https://www.w3schools.com/java/java_conditions.asp" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on if statements in Java.</p>
+<h2 id="loops">Loops<a class="anchor" href="#loops">#</a></h2>
+<h3 id="for-loops">For Loops<a class="anchor" href="#for-loops">#</a></h3>
+<p>Syntax:</p>
+<pre><code class="language-java">for(init; condition; update){
+    // statements to be executed
+}
+</code></pre>
+<p><strong>init</strong>: executed once before everything else<br>
+<strong>condition</strong>: the condition of the loop<br>
+<strong>update</strong>: executed every time the loop is iterated</p>
+<p>Example:</p>
+<pre><code class="language-java">for(int i = 0; i &lt; 4; i++){
+    System.out.println(i);
+}
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-java">0
+1
+2
+3
+</code></pre>
+<p><strong>init</strong>: declares/initializes a variable before the loop starts <code>int i = 0</code>.<br>
+<strong>condition</strong>: defines the condition for the loop to run (<code>i &lt; 4</code>). If the condition is true, the loop will iterate, if it is false, the loop will end.<br>
+<strong>update</strong>: increases a value <code>i++</code> each time the code block in the loop has been executed.</p>
+<p>During each iteration, the loop will print out the value of <code>i</code> which increments from <code>0</code> to <code>3</code>.</p>
+<p>Check out this <a href="https://www.w3schools.com/java/java_for_loop.asp" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on for loops in Java.</p>
+<h3 id="while-loops">While Loops<a class="anchor" href="#while-loops">#</a></h3>
+<p>Syntax:</p>
+<pre><code class="language-java">while(condition){
+    // statements to be executed
+}
+</code></pre>
+<p>A while loop will iterate as long as the boolean condition is <code>true</code>.</p>
+<p>Example:</p>
+<pre><code class="language-java">int i = 0;
+while(i &lt; 4){
+    System.out.println(i);
+    i++;
+}
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-java">0
+1
+2
+3
+</code></pre>
+<p>During each iteration, the loop will print out the value of <code>i</code> which starts at <code>0</code> and increments by 1 via <code>i++</code> and ends at <code>3</code>.</p>
+<p>Check out this <a href="https://www.w3schools.com/java/java_while_loop.asp" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on while loops in Java.</p>
+<h3 id="break--continue-statements">Break &amp; Continue Statements<a class="anchor" href="#break--continue-statements">#</a></h3>
+<p>Break and Continue statements are &ldquo;jump&rdquo; statements that are used to skip statements in a loop or terminate a loop. These are most commonly used inside <a href="https://whscompsciclub.github.io/posts/java/#loops" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>loops</a>
+.</p>
+<h4 id="break-statement">Break Statement</h4>
+<p>A <code>break</code> statement is used to terminate a loop immediately. Once terminated, the program returns immediately to the first statement outside the loop.</p>
+<p>Below are two examples of break statements in a <a href="https://whscompsciclub.github.io/posts/java/#for-loops" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>for loop</a>
+ and a <a href="https://whscompsciclub.github.io/posts/java/#while-loops" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>while loop</a>
+.</p>
+<pre><code class="language-java">for(int i = 0; i &lt; 5; i++){
+    if(i == 3){
+        break;
+    }
+    System.out.println(i);
+}
+System.out.println(&quot;outside of the loop&quot;);
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-java">0
+1 
+2
+outside of the loop
+</code></pre>
+<pre><code class="language-java">int j = 0;
+while(true){    // will loop forever unless there's a break statement
+    if(j == 3){
+        break;
+    }
+    System.out.print(j);
+    j++;
+}
+System.out.println(&quot;outside of the loop&quot;);
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-java">0 
+1 
+2
+outside of the loop
+</code></pre>
+<h3 id="continue-statement">Continue Statement<a class="anchor" href="#continue-statement">#</a></h3>
+<p>A <code>continue</code> statement is used to skip the current iteration of a loop. Unlike a break statement, a continue statement does not terminate the loop.</p>
+<p>Below are two examples of continue statements in a <a href="http://localhost:1313/posts/java/#for-loops" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>for loop</a>
+ and a <a href="http://localhost:1313/posts/java/#while-loops" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>while loop</a>
+.</p>
+<pre><code class="language-java">for(int i = 0; i &lt; 3; i++){
+    if(i == 1){
+        continue;
+    }
+    System.out.println(i);
+}
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-java">0
+2
+</code></pre>
+<pre><code class="language-java">int j = 0;
+while(j &lt; 3){
+    if(j = 1){
+        continue;
+    }
+    System.out.println(j);
+}
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-java:">0
+2
+</code></pre>
+<p>Check out this <a href="https://www.geeksforgeeks.org/break-and-continue-statement-in-java/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on break and continue statements in Java.</p>
+<h2 id="arrays">Arrays<a class="anchor" href="#arrays">#</a></h2>
+<p>An array is a fixed-size sequential collection of elements of the same data type. Arrays are used to store collections of data.</p>
+<h3 id="declaringinitializing">Declaring/Initializing<a class="anchor" href="#declaringinitializing">#</a></h3>
+<p>There are many various ways to declare an Array, below are some more commonly used methods.</p>
+<pre><code class="language-java">int arr[] = new int[5];                                
+String[] fruits = {&quot;apple&quot;, &quot;orange&quot;, &quot;pear&quot;, &quot;banana&quot;};
+</code></pre>
+<p>The first line creates an empty Integer (<code>int</code>) Array of size 5 with the name <code>arr</code>.</p>
+<p>The second line creates a String Array called <code>fruits</code> with the elements <code>apple</code>, <code>orange</code>, <code>pear</code>, and <code>banana</code>.</p>
+<h3 id="accessing-elements-of-an-array">Accessing Elements of an Array<a class="anchor" href="#accessing-elements-of-an-array">#</a></h3>
+<pre><code class="language-java">String[] fruits = {&quot;apple&quot;, &quot;orange&quot;, &quot;pear&quot;, &quot;banana&quot;};
+System.out.println(fruits[0]);
+fruits[1] = &quot;lemon&quot;;
+System.out.println(fruits[1]);
+</code></pre>
+<p>Output:</p>
+<pre><code>apple
+lemon
+</code></pre>
+<p>Java Arrays are <strong>zero-indexed</strong> (starts counting from 0). The first element of an array can be accessed using the name of the Array then <code>[0]</code> as shown by line 2.</p>
+<p>In line 3, <code>fruits[1]</code> has the value <code>orange</code>, but was reassign it to <code>lemon</code>. In line 4, when we print the value of <code>fruits[1]</code>, the program prints <code>lemon</code>.</p>
+<p>You can treat each element of an Array as a variable and all specific properties of the corresponding data type still applies to Array elements.</p>
+<h3 id="looping-through-an-array">Looping through an Array<a class="anchor" href="#looping-through-an-array">#</a></h3>
+<p>We can loop through an Array using a <code>for()</code> loop.</p>
+<p>Syntax:</p>
+<pre><code class="language-java">String[] fruits = {&quot;apple&quot;, &quot;lemon&quot;, &quot;pear&quot;, &quot;banana&quot;};
+for(int i = 0; i &lt; fruits.length; i++){
+    // statements to be executed
+    System.out.println(fruits[i]);
+} 
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-java">apple
+lemon
+pear
+banana
+</code></pre>
+<p><code>fruits.length</code> returns the length of the Array <code>fruit</code>, which is <code>4</code>. Note that <code>fruits[fruits.length]</code> will return an error because Java Arrays are 0-based and there is no element in <code>fruits[4]</code>.</p>
+<p>Check out this <a href="https://www.tutorialspoint.com/java/java_arrays.htm" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ and this <a href="https://www.w3schools.com/java/java_arrays.asp" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on Arrays in Java.</p>
+<h3 id="arraylist">ArrayList<a class="anchor" href="#arraylist">#</a></h3>
+<p>A Java ArrayList is a resizable array, found in the <code>java.util</code> package. ArrayLists are useful because unlike regular Arrays, there is no length limit. (If you want to add or remove elements from an array you have to create a new one).</p>
+<p>Syntax:</p>
+<pre><code class="language-java">import java.util.ArrayList;
+
+// creates an empty Integer ArrayList called 'list'
+ArrayList&lt;Integer&gt; list = new ArrayList&lt;Integer&gt;(); 
+// creates an empty String ArrayList called 'fruits'
+ArrayList&lt;String&gt; fruits = new ArrayList&lt;String&gt;();
+// add elements 
+fruits.add(&quot;apple&quot;);
+fruits.add(&quot;orange&quot;);
+fruits.add(&quot;pear&quot;);
+fruits.add(&quot;banana&quot;);
+
+// size (length) of an ArrayList
+System.out.println(fruits.size());
+
+// iterate through an ArrayList
+for(int i = 0; i &lt; fruits.size(); i++){
+    // prints each element
+    // fruits.get(i) grabs the element at index i 
+    System.out.println(fruits.get(i));
+}
+
+// remove elements
+// removes &quot;orange&quot;
+fruits.remove(1);
+// prints &quot;pear&quot; which is the new index 1
+System.out.println(fruits.get(1));
+
+// modify elements
+// sets element at index 0 to &quot;apples&quot;
+fruits.set(0, &quot;apples&quot;);
+
+// grab the index of an element
+// returns 2 which is the index of &quot;banana&quot;
+System.out.println(fruits.indexOf(&quot;banana&quot;));
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-java">4
+apple
+orange
+pear
+banana
+pear
+apples
+2
+</code></pre>
+<p>Check out this <a href="https://www.w3schools.com/java/java_arraylist.asp" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ and this <a href="https://usaco.guide/bronze/intro-ds" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on ArrayLists in Java.</p>
+<h3 id="2d-arrays">2d-Arrays<a class="anchor" href="#2d-arrays">#</a></h3>
+<p>A two dimensional Array in Java is simple an Array of Arrays. Elements are stored in rows and columns, similar to a spreadsheet or table.</p>
+<p>Syntax:</p>
+<pre><code class="language-java">// creates an empty 2 by 4 String 2d-array called 'arr'
+String[][] arr = new String[2][4];
+
+// modify elements (very similar to regular Arrays)
+arr[0][0] = &quot;test&quot;;
+System.out.println(arr[0][0]);
+
+// creates a 2 by 3 Integer 2d-array called 'nums'
+int[][] nums = { {1, 2, 3}, {4, 5, 6} };
+
+// iterating through a 2d array
+for(int i = 0; i &lt; nums.length; i++){           // nums.length = # of rows
+    for(int j = 0; j &lt; nums[i].length; j++){    // nums[i].length = # of columns
+        System.out.print(nums[i][j] + &quot; &quot;);     // prints the element and a space
+    }
+    System.out.println();                       // creates a new line
+}
+</code></pre>
+<p>Output:</p>
+<pre><code>test
+1 2 3
+4 5 6
+</code></pre>
+<p>Overall, 2d-Arrays are extremely similar to 1d-Arrays in Java. The main difference is that 2d-Arrays operate in a table or spreadsheet format, with rows first then columns.</p>
+<p>Check out this <a href="https://www.tutorialgateway.org/two-dimensional-array-in-java/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ and this <a href="https://www.java67.com/2014/10/how-to-create-and-initialize-two-dimensional-array-java-example.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on 2d-Arrays in Java.
+<br><br></p>
+<blockquote>
+<p>This is still a work in progress.<br>
+Created By: <em>WHS Computer Science Club Officers</em></p>
+</blockquote>
+
+
+              
+          </article>
+          
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://whscompsciclub.github.io/lang/python/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Python Cheatsheet</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Email"
+         href="mailto:whscompsciclub@gmail.com"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://whscompsciclub.github.io/svg/email.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="GitHub"
+         href="https://github.com/whscompsciclub"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://whscompsciclub.github.io/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Facebook"
+         href="https://facebook.com/whscompsciclub"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://whscompsciclub.github.io/svg/facebook.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Instagram"
+         href="https://instagram.com/whscompsciclub"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://whscompsciclub.github.io/svg/instagram.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="YouTube"
+         href="https://www.youtube.com/channel/UCyWeApsYIEdXetkFHjEiqZA"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://whscompsciclub.github.io/svg/youtube.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Twitter"
+         href="https://twitter.com/whscompsciclub"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://whscompsciclub.github.io/svg/twitter.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>CC-BY-NC-SA 4.0 | WHS CSC 2020</p>
+          </footer>
+          </div>
+      </div>
+      
+      <div class="toc-container">
+          
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#java-syntax">Java Syntax</a>
+      <ul>
+        <li><a href="#files">Files</a></li>
+        <li><a href="#comments">Comments</a></li>
+        <li><a href="#brackets-and-semicolons">Brackets and Semicolons</a></li>
+        <li><a href="#class-declaration--main-method">Class Declaration &amp; <code>main()</code> Method</a></li>
+      </ul>
+    </li>
+    <li><a href="#print-statement">Print Statement</a>
+      <ul>
+        <li><a href="#difference-between-print-and-println">Difference between <code>print()</code> and <code>println()</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#variables">Variables</a>
+      <ul>
+        <li><a href="#data-types">Data Types</a></li>
+      </ul>
+    </li>
+    <li><a href="#convertingparsing-arguments">Converting/Parsing Arguments</a></li>
+    <li><a href="#operators">Operators</a>
+      <ul>
+        <li><a href="#regular-arithmetic--expressions">Regular Arithmetic  Expressions</a></li>
+        <li><a href="#compound-arithmetic-assignment-operators">Compound Arithmetic Assignment Operators</a></li>
+        <li><a href="#incrementdecrement">Increment/Decrement</a></li>
+        <li><a href="#comparison-operators">Comparison Operators</a></li>
+      </ul>
+    </li>
+    <li><a href="#scanner-user-input">Scanner (User Input)</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#if-statements">If Statements</a></li>
+    <li><a href="#loops">Loops</a>
+      <ul>
+        <li><a href="#for-loops">For Loops</a></li>
+        <li><a href="#while-loops">While Loops</a></li>
+        <li><a href="#break--continue-statements">Break &amp; Continue Statements</a></li>
+        <li><a href="#continue-statement">Continue Statement</a></li>
+      </ul>
+    </li>
+    <li><a href="#arrays">Arrays</a>
+      <ul>
+        <li><a href="#declaringinitializing">Declaring/Initializing</a></li>
+        <li><a href="#accessing-elements-of-an-array">Accessing Elements of an Array</a></li>
+        <li><a href="#looping-through-an-array">Looping through an Array</a></li>
+        <li><a href="#arraylist">ArrayList</a></li>
+        <li><a href="#2d-arrays">2d-Arrays</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+    <script src="/js/table-of-contents.js"></script>
+  
+
+
+</body>
+
+</html>
