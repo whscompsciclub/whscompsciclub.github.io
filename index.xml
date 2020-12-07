@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>CC-BY-NC-SA 4.0 | WHS CSC {year}</copyright>
-    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 -0800</lastBuildDate><atom:link href="https://whscompsciclub.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://whscompsciclub.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intro to Sorting Algorithms</title>
+      <link>https://whscompsciclub.github.io/usaco/intro-sort/</link>
+      <pubDate>Sun, 06 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://whscompsciclub.github.io/usaco/intro-sort/</guid>
+      <description>We use sorting algorithms to keep an array in order. Here is a list of common sorting algorithms. Beware: the first three are highly inefficient! (See Time Complexity )
+Bubble Sort: $O(n^2)$  Set the first element as the current element. swap(current, next) if current &amp;gt; next, essentially moving it down the list Repeat last step.  if current &amp;lt; next: set next as the current element if current = end of list: set the first element as the current element   The array is sorted when no swaps occur in a single pass (from first to last).</description>
+    </item>
+    
     <item>
       <title>Time Complexity</title>
       <link>https://whscompsciclub.github.io/usaco/time-complexity/</link>
@@ -34,7 +44,7 @@
       <guid>https://whscompsciclub.github.io/lang/java/</guid>
       <description>Java Syntax Files All Java files &amp;amp; programs have the .java ending. ex: HelloWorld.java
 Comments Comments are used to help understand a piece of code. Comments are ignored by the compiler and are human-readable words intended to make the code more readable.
-// this is an example comment /* this is a multilineexample comment */ Brackets and Semicolons Java uses braces { } to define blocks of code.</description>
+// this is an example comment  /* this is a multiline example comment */  Brackets and Semicolons Java uses braces { } to define blocks of code.</description>
     </item>
     
     <item>
@@ -45,7 +55,7 @@ Comments Comments are used to help understand a piece of code. Comments are igno
       <guid>https://whscompsciclub.github.io/lang/python/</guid>
       <description>Python Syntax Files All Python files &amp;amp; programs have the .py ending. ex: main1.py
 Comments Comments are used to help understand a piece of code. Comments are ignored by the compiler and are human-readable words intended to make the code more readable.
-# this is an example comment Indentation &amp;amp; Colons While most programming languages use brackets { } to define blocks of code, Python uses indentation and colons : instead.</description>
+# this is an example comment  Indentation &amp;amp; Colons While most programming languages use brackets { } to define blocks of code, Python uses indentation and colons : instead.</description>
     </item>
     
     <item>
