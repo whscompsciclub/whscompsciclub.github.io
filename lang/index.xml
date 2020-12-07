@@ -16,7 +16,7 @@
       <guid>https://whscompsciclub.github.io/lang/java/</guid>
       <description>Java Syntax Files All Java files &amp;amp; programs have the .java ending. ex: HelloWorld.java
 Comments Comments are used to help understand a piece of code. Comments are ignored by the compiler and are human-readable words intended to make the code more readable.
-// this is an example comment  /* this is a multiline example comment */  Brackets and Semicolons Java uses braces { } to define blocks of code.</description>
+// this is an example comment /* this is a multilineexample comment */ Brackets and Semicolons Java uses braces { } to define blocks of code.</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@ Comments Comments are used to help understand a piece of code. Comments are igno
       <guid>https://whscompsciclub.github.io/lang/python/</guid>
       <description>Python Syntax Files All Python files &amp;amp; programs have the .py ending. ex: main1.py
 Comments Comments are used to help understand a piece of code. Comments are ignored by the compiler and are human-readable words intended to make the code more readable.
-# this is an example comment  Indentation &amp;amp; Colons While most programming languages use brackets { } to define blocks of code, Python uses indentation and colons : instead.</description>
+# this is an example comment Indentation &amp;amp; Colons While most programming languages use brackets { } to define blocks of code, Python uses indentation and colons : instead.</description>
     </item>
     
   </channel>
