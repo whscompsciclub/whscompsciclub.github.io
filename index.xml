@@ -19,15 +19,6 @@ Bubble Sort: $O(n^2)$  Set the first element as the current element. swap(curren
     </item>
     
     <item>
-      <title>Time Complexity</title>
-      <link>https://whscompsciclub.github.io/usaco/time-complexity/</link>
-      <pubDate>Thu, 03 Dec 2020 00:00:00 -0800</pubDate>
-      
-      <guid>https://whscompsciclub.github.io/usaco/time-complexity/</guid>
-      <description>What is Time Complexity How to calculate Time Complexity </description>
-    </item>
-    
-    <item>
       <title>Brute Force</title>
       <link>https://whscompsciclub.github.io/usaco/brute-force/</link>
       <pubDate>Wed, 02 Dec 2020 00:00:00 -0800</pubDate>

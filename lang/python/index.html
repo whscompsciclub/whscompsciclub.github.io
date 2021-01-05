@@ -297,7 +297,96 @@ else:
    target="_blank" rel="noreferrer noopener" 
 >article</a>
  for more on if statements in Python.</p>
-<p><br><br></p>
+<h2 id="loops">Loops<a class="anchor" href="#loops">#</a></h2>
+<h3 id="for-loops">For Loops<a class="anchor" href="#for-loops">#</a></h3>
+<p>A &ldquo;For Loop&rdquo; is useful when you know the amount of iterations to loop over</p>
+<p>Syntax Example:</p>
+<pre><code class="language-python">for i in range(3):
+  print(&quot;Hello&quot;)
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-python">Hello
+Hello
+Hello
+</code></pre>
+<p>Loops 3 times and prints &lsquo;Hello&rsquo; each time<br>
+<br><br>
+Syntax Example 2:</p>
+<pre><code class="language-python">for i in range(3):
+  print(i)
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-python">0
+1
+2
+</code></pre>
+<p>Loops 3 times, <code>i</code> starting at 0 and ending at 2. Prints <code>i</code> each time</p>
+<h3 id="while-loops">While Loops<a class="anchor" href="#while-loops">#</a></h3>
+<p>Syntax:</p>
+<pre><code class="language-python">while condition:
+    # statements to be executed
+</code></pre>
+<p>A while loop will iterate as long as the boolean condition is <code>true</code>. Useful when unsure about the number of iterations</p>
+<p>Example:</p>
+<pre><code class="language-python">i = 0
+while i &lt; 4:
+    print(i)
+    i += 1
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-python">0
+1
+2
+3
+</code></pre>
+<p>During each iteration, the loop will print out the value of <code>i</code> which starts at <code>0</code> and increments by 1 via <code>i+=1</code> and ends at <code>3</code>.</p>
+<p>Check out this <a href="https://www.tutorialspoint.com/python/python_loops.htm" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on loops in Python.</p>
+<h2 id="arrays">Arrays<a class="anchor" href="#arrays">#</a></h2>
+<p>An array is a collection of elements of the same data type. Arrays are used to store collections of data.</p>
+<h3 id="declaringinitializing">Declaring/Initializing<a class="anchor" href="#declaringinitializing">#</a></h3>
+<p>There are many various ways to declare an Array, below is a common declaration method.</p>
+<pre><code class="language-python">Fruits = [&quot;apples&quot;, &quot;bananas&quot;, &quot;pears&quot;]
+</code></pre>
+<p>The first line creates an String Array of size 3 with the name <code>Fruits</code>, containing elements <code>apples</code>, <code>bananas</code>, <code>pears</code>.</p>
+<h3 id="accessing-elements-of-an-array">Accessing Elements of an Array<a class="anchor" href="#accessing-elements-of-an-array">#</a></h3>
+<pre><code class="language-python">Fruits = [&quot;apples&quot;, &quot;bananas&quot;, &quot;pears&quot;]
+print(Fruits[0])
+Fruits[0] = &quot;lemon&quot;
+print(Fruits[0])
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-python">apples
+lemon
+</code></pre>
+<p>Python Arrays are <strong>zero-indexed</strong> (starts counting from 0). The first element of an array can be accessed using the name of the Array then <code>[0]</code> as shown by line 2.</p>
+<p>In line 3, <code>Fruits[0]</code> has the value <code>bananas</code>, but was reassigned to <code>lemon</code>. In line 4, when we print the value of <code>Fruits[0]</code>, the program prints <code>lemon</code>.</p>
+<p>You can treat each element of an Array as a variable and all specific properties of the corresponding data type still applies to Array elements.</p>
+<h3 id="looping-through-an-array">Looping through an Array<a class="anchor" href="#looping-through-an-array">#</a></h3>
+<p>We can loop through an Array using a <code>for</code> loop.</p>
+<p>Syntax:</p>
+<pre><code class="language-python">Fruits = [&quot;apples&quot;, &quot;bananas&quot;, &quot;pears&quot;]
+for i in Fruits:
+  print(i)
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-python">apples
+bananas
+pears
+</code></pre>
+<p>Check out this <a href="https://www.w3schools.com/python/python_arrays.asp" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ and this <a href="https://www.tutorialspoint.com/python/python_arrays.htm" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ for more on Arrays in Python.
+<br><br></p>
 <blockquote>
 <p>This is still a work in progress<br>
 Created By: <em>WHS Computer Science Club Officers</em></p>
@@ -382,7 +471,7 @@ Created By: <em>WHS Computer Science Club Officers</em></p>
      
 </div>
 
-            <p>CC-BY-NC-SA 4.0 | WHS CSC 2020</p>
+            <p>CC-BY-NC-SA 4.0 | WHS CSC 2021</p>
           </footer>
           </div>
       </div>
@@ -406,6 +495,19 @@ Created By: <em>WHS Computer Science Club Officers</em></p>
     <li><a href="#if-statements">If Statements</a>
       <ul>
         <li></li>
+      </ul>
+    </li>
+    <li><a href="#loops">Loops</a>
+      <ul>
+        <li><a href="#for-loops">For Loops</a></li>
+        <li><a href="#while-loops">While Loops</a></li>
+      </ul>
+    </li>
+    <li><a href="#arrays">Arrays</a>
+      <ul>
+        <li><a href="#declaringinitializing">Declaring/Initializing</a></li>
+        <li><a href="#accessing-elements-of-an-array">Accessing Elements of an Array</a></li>
+        <li><a href="#looping-through-an-array">Looping through an Array</a></li>
       </ul>
     </li>
   </ul>
