@@ -19,6 +19,16 @@ Bubble Sort: $O(n^2)$  Set the first element as the current element. swap(curren
     </item>
     
     <item>
+      <title>Time Complexity</title>
+      <link>https://whscompsciclub.github.io/usaco/time-complexity/</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 -0800</pubDate>
+      
+      <guid>https://whscompsciclub.github.io/usaco/time-complexity/</guid>
+      <description>In computer science, analysis of algorithms is a very crucial part. It is important to find the most efficient algorithm for solving a problem. It is possible to have many algorithms to solve a problem, but the challenge here is to choose the most efficient one.
+  Now the point is, how can we recognize the most efficient algorithm if we have a set of different algorithms? Here, the concept of space and time complexity of algorithms comes into existence.</description>
+    </item>
+    
+    <item>
       <title>Brute Force</title>
       <link>https://whscompsciclub.github.io/usaco/brute-force/</link>
       <pubDate>Wed, 02 Dec 2020 00:00:00 -0800</pubDate>
