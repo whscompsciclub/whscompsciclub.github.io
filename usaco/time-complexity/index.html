@@ -114,7 +114,7 @@
 <p>In computer science, analysis of algorithms is a very crucial part. It is important to find the most efficient algorithm for solving a problem. It is possible to have many algorithms to solve a problem, but the challenge here is to choose the most efficient one.</p>
 </blockquote>
 <blockquote>
-<p>Now the point is, how can we recognize the most efficient algorithm if we have a set of different algorithms? Here, the concept of space and time complexity of algorithms comes into existence. Space and time complexity acts as a measurement scale for algorithms. We compare the algorithms on the basis of their space (amount of memory) and time complexity (number of operations).</p>
+<p>Now the point is, how can we recognize the most efficient algorithm if we have a set of different algorithms? Here, the concept of space and time complexity of algorithms comes into existence. Space and time complexity acts as a measurement scale for algorithms. We compare the algorithms on the basis of their space (amount of memory) and time complexity (number of operations/computer time to run).</p>
 </blockquote>
 <blockquote>
 <p>The total amount of the computer&rsquo;s memory used by an algorithm when it is executed is the space complexity of that algorithm. We’ll not discuss space complexity in this article (to make this article a bit smaller).</p>
@@ -135,11 +135,28 @@
    target="_blank" rel="noreferrer noopener" 
 >article</a>
 .</p>
+<p>The larger the expression inside the parenthesis, the longer the time it takes to run the algorithm. For example, a <code>O(N²)</code> algorithm will be expected to take longer than a <code>O(N)</code> algorithm, which will in turn take longer than a <code>O(log(N))</code> and so forth. However, this may not always be the case . If you graph <code>N²</code> and <code>N</code>, you will notice that while <code>N²</code> will eventually overtake <code>N</code> in time length, there is a certain interval where <code>N²</code> is faster than <code>N</code>. However, generally speaking, since these algorithms often deal with large data, the former assertion is sufficient by itself.</p>
+<p>List of common time complexities, their names, and examples, sorted in ascending order of complexity.</p>
+<ul>
+<li><code>O(1)</code> <strong>Constant Time</strong> - Accessing an element in an array with index number</li>
+<li><code>O(log n)</code> <strong>Logarithmic Time</strong> - Binary search in sorted array (get element at the halfway point of the array and comparing against target value, essentially cutting the search area of the area in half per iteration)</li>
+<li><code>O(n)</code> <strong>Linear Time</strong> - Linear search in array (checking each element one by one until target is found), Adding all elements of an array together</li>
+<li><code>O(n log n)</code> <strong>Quasilinear Time</strong> - Various sorts like Quick Sort and Merge Sort</li>
+<li><code>O(n²)</code> <strong>Quadratic Time</strong> - Various sorts like Bubble Sort and Insertion Sort, Getting every possible unique pair of elements from an array</li>
+</ul>
+<img src="https://www.happycoders.eu/wp-content/uploads/2020/05/big-o-notation-comparing-complexity-classes-v2-1200x617.png" height="300">
+<blockquote>
+<p>Image Credit: <cite> Woltmann, Sven. “Time Complexity Graph for Big O Notation.” <em>Https://Www.happycoders.eu/</em>, <a href="http://www.happycoders.eu/algorithms/big-o-notation-time-complexity/">www.happycoders.eu/algorithms/big-o-notation-time-complexity/</a>.<cite></p>
+</blockquote>
 <p>To understand Time Complexity in general more, check out this <a href="https://www.freecodecamp.org/news/time-complexity-of-algorithms/#:~:text=So%2C%20the%20time%20complexity%20is,terms%20of%20the%20time%20complexity." 
   
    target="_blank" rel="noreferrer noopener" 
 >article</a>
-.</p>
+.
+<br><br></p>
+<blockquote>
+<p>Created By: <cite> WHS Comp Sci Club Officers <cite></p>
+</blockquote>
 
 
               
