@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>CC-BY-NC-SA 4.0 | WHS CSC {year}</copyright>
-    <lastBuildDate>Sun, 06 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://whscompsciclub.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jan 2021 00:00:00 -0800</lastBuildDate><atom:link href="https://whscompsciclub.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Machine Learning Terminology</title>
+      <link>https://whscompsciclub.github.io/machine_learning/terminology/</link>
+      <pubDate>Mon, 11 Jan 2021 00:00:00 -0800</pubDate>
+      
+      <guid>https://whscompsciclub.github.io/machine_learning/terminology/</guid>
+      <description>Labels  A label is the thing we&amp;rsquo;re predicting ex: email is spam or not spam  Features  A feature is an input variable. A simple machine learning project might use a single feature, while a more sophisticated machine learning project could use millions of features spam detector ex:  words in email text sender&amp;rsquo;s address time of email email contains the phrase &amp;ldquo;one weird trick&amp;rdquo;    Examples  An example is a particular instance of data.</description>
+    </item>
+    
     <item>
       <title>Intro to Sorting Algorithms</title>
       <link>https://whscompsciclub.github.io/usaco/intro-sort/</link>

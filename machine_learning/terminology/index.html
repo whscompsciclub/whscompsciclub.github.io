@@ -2,7 +2,7 @@
 <html lang="en-us">
 
 <head>
-  <title>VSCode Python Installation Instructions | WHS Comp. Sci. Club</title>
+  <title>Machine Learning Terminology | WHS Comp. Sci. Club</title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
@@ -15,7 +15,7 @@
   
   
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="VSCode Python Installation Instructions" />
+  <meta name="twitter:title" content="Machine Learning Terminology" />
   <meta name="twitter:description" content=""/>
   <meta name="twitter:site" content="https://twitter.com/whscompsciclub" />
   <meta name="twitter:creator" content="https://twitter.com/whscompsciclub" />
@@ -50,8 +50,8 @@
     { 
       "@context": "http://schema.org", 
       "@type": "WebSite", 
-      "url": "https:\/\/whscompsciclub.github.io\/posts\/vscodepython\/",
-      "name": "VSCode Python Installation Instructions",
+      "url": "https:\/\/whscompsciclub.github.io\/machine_learning\/terminology\/",
+      "name": "Machine Learning Terminology",
       "author": {
         "@type": "Person",
         "name": ""
@@ -93,8 +93,7 @@
       </li>
     
       <li>
-        <a  class="active"
-         href="/posts">posts</a>
+        <a  href="/posts">posts</a>
       </li>
     
   </ul>
@@ -109,87 +108,79 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">VSCode Python Installation Instructions</h1>
-            <time datetime="2020-11-05 00:00:00 -0800 PST" class="post__date">Nov 5, 2020</time> 
+            <h1 id="post__title">Machine Learning Terminology</h1>
+            <time datetime="2021-01-11 00:00:00 -0800 PST" class="post__date">Jan 11, 2021</time> 
           </header>
           <article class="post__content">
               
-<h2 id="vscode-installation">VSCode Installation<a class="anchor" href="#vscode-installation">#</a></h2>
-<p>Download <a href="https://code.visualstudio.com/" 
-  
-   target="_blank" rel="noreferrer noopener" 
->VSCode</a>
- and choose the appropriate build from the multiselect
-<br><br>
-<img src="/images/build.png" height="325"></p>
-<h2 id="python-extension">Python Extension<a class="anchor" href="#python-extension">#</a></h2>
-<p>Install the <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" 
-  
-   target="_blank" rel="noreferrer noopener" 
->VSCode Python Extension</a>
- named <strong>Python</strong> in the VSCode Marketplace
-<br><br>
-<img src="/images/pythonextension1.png" height="300"></p>
-<h2 id="install-python">Install Python<a class="anchor" href="#install-python">#</a></h2>
-<h3 id="windows">Windows<a class="anchor" href="#windows">#</a></h3>
+<!-- Common machine learning terms: -->
+<h3 id="labels">Labels<a class="anchor" href="#labels">#</a></h3>
 <ul>
-<li>Download <a href="https://www.python.org/downloads/" 
-  
-   target="_blank" rel="noreferrer noopener" 
->Python</a>
-</li>
-<li>For additional instructions check out the <a href="https://docs.python.org/3.7/using/windows.html" 
-  
-   target="_blank" rel="noreferrer noopener" 
->official documentation</a>
+<li>A <strong>label</strong> is the thing we&rsquo;re predicting</li>
+<li>ex: email is <em><strong>spam</strong></em> or <em><strong>not spam</strong></em></li>
+</ul>
+<h3 id="features">Features<a class="anchor" href="#features">#</a></h3>
+<ul>
+<li>A <strong>feature</strong> is an input variable. A simple machine learning project might use a single feature, while a more sophisticated machine learning project could use millions of features</li>
+<li>spam detector ex:
+<ul>
+<li>words in email text</li>
+<li>sender&rsquo;s address</li>
+<li>time of email</li>
+<li>email contains the phrase &ldquo;one weird trick&rdquo;</li>
+</ul>
 </li>
 </ul>
-<h3 id="macos">macOS<a class="anchor" href="#macos">#</a></h3>
+<h3 id="examples">Examples<a class="anchor" href="#examples">#</a></h3>
 <ul>
-<li>Use <a href="https://brew.sh/" 
-  
-   target="_blank" rel="noreferrer noopener" 
->Homebrew</a>
- to install Python</li>
-<li>use <code>brew install python3</code> at the Terminal prompt</li>
-<li>Follow instructions from <a href="https://code.visualstudio.com/docs/python/python-tutorial" 
-  
-   target="_blank" rel="noreferrer noopener" 
->here</a>
- if necessary</li>
+<li>An <strong>example</strong> is a particular instance of data. We break examples into 2 categories:</li>
+<li><strong>labeled</strong> examples
+<ul>
+<li>includes both feature(s) and the label</li>
+<li>used to <strong>train</strong> the model</li>
+<li>spam detector eex:
+<ul>
+<li>emails that the users have explicitly marked as &ldquo;spam&rdquo; or &ldquo;not spam&rdquo;</li>
 </ul>
-<h3 id="linux">Linux<a class="anchor" href="#linux">#</a></h3>
-<ul>
-<li>There should be a built-in Python 3 installation already, but to install other Python packages you must install <code>pip</code> with <a href="https://pip.pypa.io/en/stable/installing/#installing-with-get-pip-py" 
-  
-   target="_blank" rel="noreferrer noopener" 
->get-pip.py</a>
 </li>
-<li>Follow instructions from <a href="https://code.visualstudio.com/docs/python/python-tutorial" 
-  
-   target="_blank" rel="noreferrer noopener" 
->here</a>
- if necessary</li>
 </ul>
-<h2 id="check-python-installation">Check Python Installation<a class="anchor" href="#check-python-installation">#</a></h2>
+</li>
+<li><strong>unlabeled</strong> examples
 <ul>
-<li>Windows: Open a command prompt and run <code>py -3 --version</code></li>
-<li>macOS / Linux: In the terminal, run <code>python3 --version</code></li>
+<li>contains features but not the label</li>
+<li>we use the model to predict the label on unlabeled examples</li>
+<li>spam detector ex:
+<ul>
+<li>new emails that humans haven&rsquo;t yet labeled</li>
 </ul>
-<p>If the installation was successful, then the ouput windows will show the version of Python that you installed. If you received an error, try searching on <a href="https://google.com" 
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="models">Models<a class="anchor" href="#models">#</a></h3>
+<ul>
+<li>A <strong>model</strong> is an algorithm that defines that the relationship between feature and labels</li>
+<li>2 phases of a model&rsquo;s life
+<ul>
+<li><strong>Training</strong> means creating or <strong>learning</strong> the model. That is, you show the model labeled examples and enable the model to gradually learn the relationships between features and label</li>
+<li><strong>Inference</strong> means applying the trained model to unlabeled examples. That is, you use the trained model to make useful predictions</li>
+</ul>
+</li>
+</ul>
+<p>Check out this <a href="https://developers.google.com/machine-learning/glossary#example" 
   
    target="_blank" rel="noreferrer noopener" 
->Google</a>
- and <a href="https://stackoverflow.com" 
+>article</a>
+ for more on Machine Learning terms 
+<br><br ></p>
+<blockquote>
+<p>“Framing: Key ML Terminology  |  Machine Learning Crash Course.”<br>
+<cite>Google, Google,<a href="https://developers.google.com/machine-learning/crash-course/framing/ml-terminology" 
   
    target="_blank" rel="noreferrer noopener" 
->Stack Overflow</a>
-, and following this tutorial <a href="https://code.visualstudio.com/docs/python/python-tutorial" 
-  
-   target="_blank" rel="noreferrer noopener" 
->here</a>
-.
-<br><br></p>
+>developers.google.com/machine-learning/crash-course/framing/ml-terminology</a>
+<cite></p>
+</blockquote>
 <blockquote>
 <p>Created By: <cite> WHS Comp Sci Club Officers <cite></p>
 </blockquote>
@@ -277,16 +268,14 @@
           
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#vscode-installation">VSCode Installation</a></li>
-    <li><a href="#python-extension">Python Extension</a></li>
-    <li><a href="#install-python">Install Python</a>
+    <li>
       <ul>
-        <li><a href="#windows">Windows</a></li>
-        <li><a href="#macos">macOS</a></li>
-        <li><a href="#linux">Linux</a></li>
+        <li><a href="#labels">Labels</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#examples">Examples</a></li>
+        <li><a href="#models">Models</a></li>
       </ul>
     </li>
-    <li><a href="#check-python-installation">Check Python Installation</a></li>
   </ul>
 </nav>
       </div>
