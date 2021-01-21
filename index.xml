@@ -9,6 +9,15 @@
     <copyright>CC-BY-NC-SA 4.0 | WHS CSC {year}</copyright>
     <lastBuildDate>Mon, 11 Jan 2021 00:00:00 -0800</lastBuildDate><atom:link href="https://whscompsciclub.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Image Classification in ML</title>
+      <link>https://whscompsciclub.github.io/machine_learning/img_classification/</link>
+      <pubDate>Mon, 11 Jan 2021 00:00:00 -0800</pubDate>
+      
+      <guid>https://whscompsciclub.github.io/machine_learning/img_classification/</guid>
+      <description>Prerequisites: Machine Learning Terminology Semantic Gap In order to train a Machine Learning Model that can classify images, we need to first overcome a few challenges, commonly known as the Semantic Gap When the computer is given an image, it reads the data as a 3d-matrix/array defined by its dimensions and RGB pixels. A typical matrix size would be [800, 600, 3], with the 800 and 600 being dimensions and the 3 representing the 3 RGB (red, green blue) channels.</description>
+    </item>
+    
+    <item>
       <title>Machine Learning Terminology</title>
       <link>https://whscompsciclub.github.io/machine_learning/terminology/</link>
       <pubDate>Mon, 11 Jan 2021 00:00:00 -0800</pubDate>

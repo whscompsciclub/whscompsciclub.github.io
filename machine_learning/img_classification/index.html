@@ -2,7 +2,7 @@
 <html lang="en-us">
 
 <head>
-  <title>Machine Learning Terminology | WHS Comp. Sci. Club</title>
+  <title>Image Classification in ML | WHS Comp. Sci. Club</title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
@@ -15,7 +15,7 @@
   
   
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Machine Learning Terminology" />
+  <meta name="twitter:title" content="Image Classification in ML" />
   <meta name="twitter:description" content=""/>
   <meta name="twitter:site" content="https://twitter.com/whscompsciclub" />
   <meta name="twitter:creator" content="https://twitter.com/whscompsciclub" />
@@ -50,8 +50,8 @@
     { 
       "@context": "http://schema.org", 
       "@type": "WebSite", 
-      "url": "https:\/\/whscompsciclub.github.io\/machine_learning\/terminology\/",
-      "name": "Machine Learning Terminology",
+      "url": "https:\/\/whscompsciclub.github.io\/machine_learning\/img_classification\/",
+      "name": "Image Classification in ML",
       "author": {
         "@type": "Person",
         "name": ""
@@ -108,78 +108,74 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">Machine Learning Terminology</h1>
+            <h1 id="post__title">Image Classification in ML</h1>
             <time datetime="2021-01-11 00:00:00 -0800 PST" class="post__date">Jan 11, 2021</time> 
           </header>
           <article class="post__content">
               
-<!-- Common machine learning terms: -->
-<h3 id="labels">Labels<a class="anchor" href="#labels">#</a></h3>
-<ul>
-<li>A <strong>label</strong> is the thing we&rsquo;re predicting</li>
-<li>ex: email is <em><strong>spam</strong></em> or <em><strong>not spam</strong></em></li>
-</ul>
-<h3 id="features">Features<a class="anchor" href="#features">#</a></h3>
-<ul>
-<li>A <strong>feature</strong> is an input variable. A simple machine learning project might use a single feature, while a more sophisticated machine learning project could use millions of features</li>
-<li>spam detector ex:
-<ul>
-<li>words in email text</li>
-<li>sender&rsquo;s address</li>
-<li>time of email</li>
-<li>email contains the phrase &ldquo;one weird trick&rdquo;</li>
-</ul>
-</li>
-</ul>
-<h3 id="examples">Examples<a class="anchor" href="#examples">#</a></h3>
-<ul>
-<li>An <strong>example</strong> is a particular instance of data. We break examples into 2 categories:</li>
-<li><strong>labeled</strong> examples
-<ul>
-<li>includes both feature(s) and the label</li>
-<li>used to <strong>train</strong> the model</li>
-<li>spam detector eex:
-<ul>
-<li>emails that the users have explicitly marked as &ldquo;spam&rdquo; or &ldquo;not spam&rdquo;</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><strong>unlabeled</strong> examples
-<ul>
-<li>contains features but not the label</li>
-<li>we use the model to predict the label on unlabeled examples</li>
-<li>spam detector ex:
-<ul>
-<li>new emails that humans haven&rsquo;t yet labeled</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="models">Models<a class="anchor" href="#models">#</a></h3>
-<ul>
-<li>A <strong>model</strong> is an algorithm that defines that the relationship between feature and labels</li>
-<li>2 phases of a model&rsquo;s life
-<ul>
-<li><strong>Training</strong> means creating or <strong>learning</strong> the model. That is, you show the model labeled examples and enable the model to gradually learn the relationships between features and label</li>
-<li><strong>Inference</strong> means applying the trained model to unlabeled examples. That is, you use the trained model to make useful predictions</li>
-</ul>
-</li>
-</ul>
-<p>Check out this <a href="https://developers.google.com/machine-learning/glossary" 
+<p>Prerequisites: <a href="https://whscompsciclub.github.io/machine_learning/terminology/" 
   
    target="_blank" rel="noreferrer noopener" 
->article</a>
- for more on Machine Learning terms 
-<br><br ></p>
+>Machine Learning Terminology</a>
+</p>
+<h2 id="semantic-gap">Semantic Gap<a class="anchor" href="#semantic-gap">#</a></h2>
+<p>In order to train a Machine Learning Model that can classify images, we need to first overcome a few challenges, commonly known as the <a href="https://en.wikipedia.org/wiki/Semantic_gap" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Semantic Gap</a>
+</p>
+<p>When the computer is given an image, it reads the data as a 3d-matrix/array defined by its dimensions and RGB pixels. A typical matrix size would be <code>[800, 600, 3]</code>, with the 800 and 600 being dimensions and the 3 representing the 3 RGB (red, green blue) channels.</p>
+<h3 id="viewpoint-variation">Viewpoint Variation<a class="anchor" href="#viewpoint-variation">#</a></h3>
+<p>If the &ldquo;camera&rdquo; is rotated or moved when taking a picture, all pixels will change.<br>
+<br><br>
+<img src="/images/viewpointVariation.png" height="350"></p>
+<h3 id="illumination">Illumination<a class="anchor" href="#illumination">#</a></h3>
+<p>Similarly, the lighting of the photo can also affect the picture.
+<br><br>
+<img src="/images/illumination.png" height="350"></p>
+<h3 id="deformation">Deformation<a class="anchor" href="#deformation">#</a></h3>
+<p>Objects can also be &ldquo;deformed&rdquo;, and photos can contain objects with an unusual appearance.
+<br><br>
+<img src="/images/deformation.png" height="350"></p>
+<h3 id="occlusion">Occlusion<a class="anchor" href="#occlusion">#</a></h3>
+<p>Objects can also be occluded or blocked by other objects. For example, a cat under a couch cushion would be hard for a computer distinguish, although humans can instantly recognize that there is a cat.
+<br><br>
+<img src="/images/occlusion.png" height="350"></p>
+<h3 id="background-clutter">Background Clutter<a class="anchor" href="#background-clutter">#</a></h3>
+<p>If the object blends into the background or vice versa, the object may be hard for a computer to distinguish.
+<br><br>
+<img src="/images/backgroundClutter.png" height="350"></p>
+<h3 id="intraclass-variation">Intraclass Variation<a class="anchor" href="#intraclass-variation">#</a></h3>
+<p>Lastly, objects such as cats can have various species of different colors, sizes, and shapes.
+<br><br>
+<img src="/images/intraclassVariation.png" height="350"></p>
+<h2 id="convolutional-neural-network">Convolutional Neural Network<a class="anchor" href="#convolutional-neural-network">#</a></h2>
+<p>To counter these challenges, we use something called a <a href="https://en.wikipedia.org/wiki/Convolutional_neural_network" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Convolutional Neural Network</a>
+<br>
+<br><br>
+<a href="http://www.youtube.com/watch?v=2JEtEdsLdoo"  title="Machine Learning Practicum: Image Classification" 
+  
+   target="_blank" rel="noreferrer noopener" 
+><img src="/images/machineLearningPracticum.png" height="350"></a>
+</p>
 <blockquote>
-<p>“Framing: Key ML Terminology  |  Machine Learning Crash Course.”<br>
-<cite>Google, Google,<a href="https://developers.google.com/machine-learning/crash-course/framing/ml-terminology" 
+<p><cite> Stanford’s cs231n 2018 Course: “Lecture 2 | Image Classification” <cite></p>
+<ul>
+<li><a href="http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture2.pdf" 
   
    target="_blank" rel="noreferrer noopener" 
->developers.google.com/machine-learning/crash-course/framing/ml-terminology</a>
-<cite></p>
+>cs231n slides</a>
+</li>
+<li><a href="https://www.youtube.com/watch?v=OoUX-nOEjG0" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>cs231n video</a>
+
+<br><br></li>
+</ul>
 </blockquote>
 <blockquote>
 <p>Created By: <cite> WHS Comp Sci Club Officers <cite></p>
@@ -192,12 +188,12 @@
 
  <div class="pagination">
   
-
-  
-    <a class="pagination__item" href="https://whscompsciclub.github.io/machine_learning/img_classification/">
-      <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >Image Classification in ML</span>
+    <a class="pagination__item" href="https://whscompsciclub.github.io/machine_learning/terminology/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Machine Learning Terminology</span>
     </a>
+  
+
   
 </div>
 
@@ -273,14 +269,17 @@
           
         <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#semantic-gap">Semantic Gap</a>
       <ul>
-        <li><a href="#labels">Labels</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#examples">Examples</a></li>
-        <li><a href="#models">Models</a></li>
+        <li><a href="#viewpoint-variation">Viewpoint Variation</a></li>
+        <li><a href="#illumination">Illumination</a></li>
+        <li><a href="#deformation">Deformation</a></li>
+        <li><a href="#occlusion">Occlusion</a></li>
+        <li><a href="#background-clutter">Background Clutter</a></li>
+        <li><a href="#intraclass-variation">Intraclass Variation</a></li>
       </ul>
     </li>
+    <li><a href="#convolutional-neural-network">Convolutional Neural Network</a></li>
   </ul>
 </nav>
       </div>
