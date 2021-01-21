@@ -9,6 +9,16 @@
     <copyright>CC-BY-NC-SA 4.0 | WHS CSC {year}</copyright>
     <lastBuildDate>Thu, 05 Nov 2020 00:00:00 -0800</lastBuildDate><atom:link href="https://whscompsciclub.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Recursion</title>
+      <link>https://whscompsciclub.github.io/posts/recursion/</link>
+      <pubDate>Thu, 05 Nov 2020 00:00:00 -0800</pubDate>
+      
+      <guid>https://whscompsciclub.github.io/posts/recursion/</guid>
+      <description>Recursive Function  A function that calls itself Solves problems by solving smaller instances of the same problem until the problem is so small it can be solved directly (also see Recursive Function )  Russian Doll A russian doll is a good example of recursion, as it gets smaller and smaller until there exists a doll that is too small to contain another doll
+Parts to a Recursive Function  A simply case: can be solved directly A complex case: can be made simpler (and simpler &amp;hellip; until it looks like the simple case)  Factorial Find the factorial of n using recursion</description>
+    </item>
+    
+    <item>
       <title>VSCode Python Installation Instructions</title>
       <link>https://whscompsciclub.github.io/posts/vscodepython/</link>
       <pubDate>Thu, 05 Nov 2020 00:00:00 -0800</pubDate>
