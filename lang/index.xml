@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>CC-BY-NC-SA 4.0 | WHS CSC {year}</copyright>
-    <lastBuildDate>Sat, 07 Nov 2020 00:00:00 -0800</lastBuildDate><atom:link href="https://whscompsciclub.github.io/lang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Jan 2021 00:00:00 -0800</lastBuildDate><atom:link href="https://whscompsciclub.github.io/lang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS Cheatsheet</title>
+      <link>https://whscompsciclub.github.io/lang/css/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 -0800</pubDate>
+      
+      <guid>https://whscompsciclub.github.io/lang/css/</guid>
+      <description>What is CSS CSS, or Cascading Style Sheets, is a style sheet language used by web pages to help keep information in the proper display format. CSS helps beautify HTML and give it life.
+Prerequisites: Knowledge in HTML, check out our article on HTML here CSS Syntax 
+In this image, h1 is the selector and then there are 2 declarations
+ color: blue; font-size: 12px;  This sets the font-color to blue and then the font-size to 12px for all h1 tags</description>
+    </item>
+    
     <item>
       <title>Java Cheatsheet</title>
       <link>https://whscompsciclub.github.io/lang/java/</link>
