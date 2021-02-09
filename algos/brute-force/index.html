@@ -2,7 +2,7 @@
 <html lang="en-us">
 
 <head>
-  <title>VSCode Python Installation Instructions | WHS Comp. Sci. Club</title>
+  <title>Brute Force | WHS Comp. Sci. Club</title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
@@ -15,7 +15,7 @@
   
   
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="VSCode Python Installation Instructions" />
+  <meta name="twitter:title" content="Brute Force" />
   <meta name="twitter:description" content=""/>
   <meta name="twitter:site" content="https://twitter.com/whscompsciclub" />
   <meta name="twitter:creator" content="https://twitter.com/whscompsciclub" />
@@ -50,8 +50,8 @@
     { 
       "@context": "http://schema.org", 
       "@type": "WebSite", 
-      "url": "https:\/\/whscompsciclub.github.io\/posts\/vscodepython\/",
-      "name": "VSCode Python Installation Instructions",
+      "url": "https:\/\/whscompsciclub.github.io\/algos\/brute-force\/",
+      "name": "Brute Force",
       "author": {
         "@type": "Person",
         "name": ""
@@ -81,7 +81,8 @@
       </li>
     
       <li>
-        <a  href="/algos">algos</a>
+        <a  class="active"
+         href="/algos">algos</a>
       </li>
     
       <li>
@@ -93,8 +94,7 @@
       </li>
     
       <li>
-        <a  class="active"
-         href="/posts">posts</a>
+        <a  href="/posts">posts</a>
       </li>
     
   </ul>
@@ -109,86 +109,40 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">VSCode Python Installation Instructions</h1>
-            <time datetime="2020-11-05 00:00:00 -0800 PST" class="post__date">Nov 5, 2020</time> 
+            <h1 id="post__title">Brute Force</h1>
+            <time datetime="2020-12-02 00:00:00 -0800 PST" class="post__date">Dec 2, 2020</time> 
           </header>
           <article class="post__content">
               
-<h2 id="vscode-installation">VSCode Installation<a class="anchor" href="#vscode-installation">#</a></h2>
-<p>Download <a href="https://code.visualstudio.com/" 
-  
-   target="_blank" rel="noreferrer noopener" 
->VSCode</a>
- and choose the appropriate build from the multiselect
+<h2 id="what-is-brute-forcing">What is Brute Forcing?<a class="anchor" href="#what-is-brute-forcing">#</a></h2>
+<p>A brute-force problem is exactly what it sounds like: simply doing everything possible to eventually reach the answer. Let&rsquo;s say you were trying to achieve the password to someone&rsquo;s phone (assume 4 digits from 0 to 9). A brute force solution would be to try every single password possible. This way, it is guaranteed that at one point, the answer would be correct.
 <br><br>
-<img src="/images/build.png" height="325"></p>
-<h2 id="python-extension">Python Extension<a class="anchor" href="#python-extension">#</a></h2>
-<p>Install the <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" 
-  
-   target="_blank" rel="noreferrer noopener" 
->VSCode Python Extension</a>
- named <strong>Python</strong> in the VSCode Marketplace
-<br><br>
-<img src="/images/pythonextension1.png" height="300"></p>
-<h2 id="install-python">Install Python<a class="anchor" href="#install-python">#</a></h2>
-<h3 id="windows">Windows<a class="anchor" href="#windows">#</a></h3>
+<img src="/images/bruteforcepassword.png" height="350"></p>
 <ul>
-<li>Download <a href="https://www.python.org/downloads/" 
-  
-   target="_blank" rel="noreferrer noopener" 
->Python</a>
+<li><strong>Pros</strong>
+<ul>
+<li>Easy/Uncomplicated</li>
+<li>Guarantees a solution</li>
+</ul>
 </li>
-<li>For additional instructions check out the <a href="https://docs.python.org/3.7/using/windows.html" 
-  
-   target="_blank" rel="noreferrer noopener" 
->official documentation</a>
+<li><strong>Cons</strong>
+<ul>
+<li>Inefficient</li>
+<li>Not suitable for every problem</li>
+</ul>
 </li>
 </ul>
-<h3 id="macos">macOS<a class="anchor" href="#macos">#</a></h3>
-<ul>
-<li>Use <a href="https://brew.sh/" 
+<h2 id="brute-force-in-the-usaco">Brute Force in the USACO<a class="anchor" href="#brute-force-in-the-usaco">#</a></h2>
+<blockquote>
+<p>It is almost guaranteed that there will be <strong>at least one brute force problem</strong> in a USACO Bronze contest, and sometimes there will be 2 (and rarely 3).</p>
+</blockquote>
+<p>When taking the USACO, keep in mind that it is a four hour test. That is a small amount of time given as contestants are expected to solve three, very difficult questions. As a contestant, you need to know how to manage your time.</p>
+<p>If brute force is possible within the time limit, don’t hesitate. Brute force algorithms are the easiest to type up.</p>
+<p>To determine if brute force is doable, learn about time complexity <a href="../time-complexity" 
   
-   target="_blank" rel="noreferrer noopener" 
->Homebrew</a>
- to install Python</li>
-<li>use <code>brew install python3</code> at the Terminal prompt</li>
-<li>Follow instructions from <a href="https://code.visualstudio.com/docs/python/python-tutorial" 
   
-   target="_blank" rel="noreferrer noopener" 
 >here</a>
- if necessary</li>
-</ul>
-<h3 id="linux">Linux<a class="anchor" href="#linux">#</a></h3>
-<ul>
-<li>There should be a built-in Python 3 installation already, but to install other Python packages you must install <code>pip</code> with <a href="https://pip.pypa.io/en/stable/installing/#installing-with-get-pip-py" 
-  
-   target="_blank" rel="noreferrer noopener" 
->get-pip.py</a>
-</li>
-<li>Follow instructions from <a href="https://code.visualstudio.com/docs/python/python-tutorial" 
-  
-   target="_blank" rel="noreferrer noopener" 
->here</a>
- if necessary</li>
-</ul>
-<h2 id="check-python-installation">Check Python Installation<a class="anchor" href="#check-python-installation">#</a></h2>
-<ul>
-<li>Windows: Open a command prompt and run <code>py -3 --version</code></li>
-<li>macOS / Linux: In the terminal, run <code>python3 --version</code></li>
-</ul>
-<p>If the installation was successful, then the ouput windows will show the version of Python that you installed. If you received an error, try searching on <a href="https://google.com" 
-  
-   target="_blank" rel="noreferrer noopener" 
->Google</a>
- and <a href="https://stackoverflow.com" 
-  
-   target="_blank" rel="noreferrer noopener" 
->Stack Overflow</a>
-, and following this tutorial <a href="https://code.visualstudio.com/docs/python/python-tutorial" 
-  
-   target="_blank" rel="noreferrer noopener" 
->here</a>
-.
+
 <br><br></p>
 <blockquote>
 <p>Created By: <cite> WHS Comp Sci Club Officers <cite></p>
@@ -202,6 +156,11 @@
  <div class="pagination">
   
 
+  
+    <a class="pagination__item" href="https://whscompsciclub.github.io/algos/time-complexity/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >Time Complexity</span>
+    </a>
   
 </div>
 
@@ -277,16 +236,8 @@
           
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#vscode-installation">VSCode Installation</a></li>
-    <li><a href="#python-extension">Python Extension</a></li>
-    <li><a href="#install-python">Install Python</a>
-      <ul>
-        <li><a href="#windows">Windows</a></li>
-        <li><a href="#macos">macOS</a></li>
-        <li><a href="#linux">Linux</a></li>
-      </ul>
-    </li>
-    <li><a href="#check-python-installation">Check Python Installation</a></li>
+    <li><a href="#what-is-brute-forcing">What is Brute Forcing?</a></li>
+    <li><a href="#brute-force-in-the-usaco">Brute Force in the USACO</a></li>
   </ul>
 </nav>
       </div>

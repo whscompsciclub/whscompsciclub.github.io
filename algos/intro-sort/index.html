@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Intro to Sorting Algorithms | WHS Comp. Sci. Club</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Intro to Sorting Algorithms" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="https://twitter.com/whscompsciclub" />
+  <meta name="twitter:creator" content="https://twitter.com/whscompsciclub" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.994a1438c47f2f27fdac1037328425b17f5bc66992d96ab217c876a4d079a883.css" integrity="sha256-mUoUOMR/Lyf9rBA3MoQlsX9bxmmS2WqyF8h2pNB5qIM="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    { 
+      "@context": "http://schema.org", 
+      "@type": "WebSite", 
+      "url": "https:\/\/whscompsciclub.github.io\/algos\/intro-sort\/",
+      "name": "Intro to Sorting Algorithms",
+      "author": {
+        "@type": "Person",
+        "name": ""
+      },
+      "description": ""
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">about</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/algos">algos</a>
+      </li>
+    
+      <li>
+        <a  href="/lang">lang</a>
+      </li>
+    
+      <li>
+        <a  href="/machine_learning">machine learning</a>
+      </li>
+    
+      <li>
+        <a  href="/posts">posts</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Intro to Sorting Algorithms</h1>
+            <time datetime="2020-12-06 00:00:00 &#43;0000 UTC" class="post__date">Dec 6, 2020</time> 
+          </header>
+          <article class="post__content">
+              
+<p>We use sorting algorithms to keep an array in order. Here is a list of common sorting algorithms. Beware: the first three are highly inefficient! (See <a href="https://whscompsciclub.github.io/usaco/time-complexity/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Time Complexity</a>
+)</p>
+<h2 id="bubble-sort-on2">Bubble Sort: <code>$O(n^2)$</code><a class="anchor" href="#bubble-sort-on2">#</a></h2>
+<ul>
+<li>Set the first element as the current element.</li>
+<li><code>swap(current, next)</code> if current &gt; next, essentially moving it down the list</li>
+<li>Repeat last step.
+<ul>
+<li>if current &lt; next: set next as the current element</li>
+<li>if current = end of list: set the first element as the current element</li>
+</ul>
+</li>
+<li>The array is sorted when no swaps occur in a single pass (from first to last).</li>
+<li>Intuition: &ldquo;bubble&rdquo; larger elements up to the end of the array.</li>
+</ul>
+<h2 id="selection-sort-on2">Selection Sort: <code>$O(n^2)$</code><a class="anchor" href="#selection-sort-on2">#</a></h2>
+<ul>
+<li>Split array into [ <code>sorted</code> | <code>unsorted</code> ] (initially <code>sorted</code> has 0 elements).
+<ul>
+<li>Note: they are still in the same array; use a counter to keep track of the split</li>
+</ul>
+</li>
+<li>Repeat until there is 0 element in <code>unsorted</code>.
+<ul>
+<li>Find the lowest value in array.</li>
+<li>Swap it with the first element of the unsorted portion.</li>
+<li>Extend the sorted array by one element (<code>counter++</code>) to include the new lowest value.
+<ul>
+<li>The new lowest value is always larger than all elements in <code>sorted</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Repeat (search, swap, extend).</li>
+<li>The sorted array will contain a list of &ldquo;minimum values&rdquo; in increasing order.</li>
+</ul>
+<h2 id="insertion-sort-on2">Insertion Sort: <code>$O(n^2)$</code><a class="anchor" href="#insertion-sort-on2">#</a></h2>
+<ul>
+<li>Split array into [ <code>sorted</code> | <code>unsorted</code> ] (initially <code>sorted</code> has 0 elements).</li>
+<li>Repeat.
+<ul>
+<li>Get the first element from the unsorted array.</li>
+<li>Iterate the sorted array backwards.
+<ul>
+<li>if current &lt;= unsorted element: insert unsorted after current; break out of loop.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Sorting is complete when <code>unsorted</code> has 0 elements.</li>
+</ul>
+<h2 id="merge-sort-onlogn">Merge Sort: <code>$O(n\log{n})$</code><a class="anchor" href="#merge-sort-onlogn">#</a></h2>
+<ul>
+<li>Merge sort is a divide-and-conquer algorithm
+<ul>
+<li>Divide the task (sorting) into smaller tasks recursively (i.e. until they are indivisible / as easy as possible).</li>
+<li>Solve the easy task.</li>
+<li>Combine solutions to solve the larger / harder tasks.</li>
+</ul>
+</li>
+<li>First treat each element as one-element subarrays. These arrays are sorted.</li>
+<li>Combine one-element subarrays (always two at a time) into two-element subarrays. This is trivial; just place the smaller element first.</li>
+<li>To combine arrays with length <code>$l \ge 4$</code> (all subarray lengths are powers of two):
+<ul>
+<li>Iterate both arrays at the same time. Use two separate counters (i, j) to keep track.</li>
+<li>Keep a third counter (k). You will use this counter to index and replace the original array element&rsquo;s value (You are doing the sorting in place to save space; You will at most need as much free space as two times the size of the original array).</li>
+<li>if first[i] &lt; second[j], then array[k] = first[i], i++, k++ (<code>++</code> increments a variable by one)</li>
+<li>else, array[k] = second[j], j++, k++</li>
+<li>Repeat until one of the arrays run out of values. Copy the rest of the other array back into the original (they are already sorted as a subproblem)</li>
+</ul>
+</li>
+<li>The array is sorted when all the subarrays (subproblems) have been sorted and combined.</li>
+</ul>
+<h2 id="more-sorting-algorithms">More sorting algorithms<a class="anchor" href="#more-sorting-algorithms">#</a></h2>
+<ul>
+<li><a href="https://visualgo.net/en/sorting" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Visualize sorting algorithms</a>
+</li>
+<li><a href="https://www.geeksforgeeks.org/sorting-algorithms/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>List of sorting algorithms</a>
+</li>
+<li><a href="https://www.geeksforgeeks.org/time-complexities-of-all-sorting-algorithms/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Sorting algorithms time complexity</a>
+</li>
+</ul>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\\[','\\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+<style>
+code.has-jax {font: inherit;
+              font-size: 100%;
+              background: inherit;
+              border: inherit;
+              color: #515151;}
+              </style>
+<p><br><br></p>
+<blockquote>
+<p>Created By: <cite> WHS Comp Sci Club Officers <cite></p>
+</blockquote>
+
+
+              
+          </article>
+          
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://whscompsciclub.github.io/algos/time-complexity/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Time Complexity</span>
+    </a>
+  
+
+  
+    <a class="pagination__item" href="https://whscompsciclub.github.io/algos/recursion/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >Recursion</span>
+    </a>
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Email"
+         href="mailto:whscompsciclub@gmail.com"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://whscompsciclub.github.io/svg/email.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="GitHub"
+         href="https://github.com/whscompsciclub"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://whscompsciclub.github.io/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Facebook"
+         href="https://facebook.com/whscompsciclub"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://whscompsciclub.github.io/svg/facebook.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Instagram"
+         href="https://instagram.com/whscompsciclub"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://whscompsciclub.github.io/svg/instagram.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="YouTube"
+         href="https://www.youtube.com/channel/UCyWeApsYIEdXetkFHjEiqZA"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://whscompsciclub.github.io/svg/youtube.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Twitter"
+         href="https://twitter.com/whscompsciclub"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://whscompsciclub.github.io/svg/twitter.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>CC-BY-NC-SA 4.0 | WHS CSC 2021</p>
+          </footer>
+          </div>
+      </div>
+      
+      <div class="toc-container">
+          
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#bubble-sort-on2">Bubble Sort: <code>$O(n^2)$</code></a></li>
+    <li><a href="#selection-sort-on2">Selection Sort: <code>$O(n^2)$</code></a></li>
+    <li><a href="#insertion-sort-on2">Insertion Sort: <code>$O(n^2)$</code></a></li>
+    <li><a href="#merge-sort-onlogn">Merge Sort: <code>$O(n\log{n})$</code></a></li>
+    <li><a href="#more-sorting-algorithms">More sorting algorithms</a></li>
+  </ul>
+</nav>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+    <script src="/js/table-of-contents.js"></script>
+  
+
+
+</body>
+
+</html>

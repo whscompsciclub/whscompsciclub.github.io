@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Time Complexity | WHS Comp. Sci. Club</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Time Complexity" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="https://twitter.com/whscompsciclub" />
+  <meta name="twitter:creator" content="https://twitter.com/whscompsciclub" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.994a1438c47f2f27fdac1037328425b17f5bc66992d96ab217c876a4d079a883.css" integrity="sha256-mUoUOMR/Lyf9rBA3MoQlsX9bxmmS2WqyF8h2pNB5qIM="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    { 
+      "@context": "http://schema.org", 
+      "@type": "WebSite", 
+      "url": "https:\/\/whscompsciclub.github.io\/algos\/time-complexity\/",
+      "name": "Time Complexity",
+      "author": {
+        "@type": "Person",
+        "name": ""
+      },
+      "description": ""
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">about</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/algos">algos</a>
+      </li>
+    
+      <li>
+        <a  href="/lang">lang</a>
+      </li>
+    
+      <li>
+        <a  href="/machine_learning">machine learning</a>
+      </li>
+    
+      <li>
+        <a  href="/posts">posts</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Time Complexity</h1>
+            <time datetime="2020-12-03 00:00:00 -0800 PST" class="post__date">Dec 3, 2020</time> 
+          </header>
+          <article class="post__content">
+              
+<blockquote>
+<p>In computer science, analysis of algorithms is a very crucial part. It is important to find the most efficient algorithm for solving a problem. It is possible to have many algorithms to solve a problem, but the challenge here is to choose the most efficient one.</p>
+</blockquote>
+<blockquote>
+<p>Now the point is, how can we recognize the most efficient algorithm if we have a set of different algorithms? Here, the concept of space and time complexity of algorithms comes into existence. Space and time complexity acts as a measurement scale for algorithms. We compare the algorithms on the basis of their space (amount of memory) and time complexity (number of operations/computer time to run).</p>
+</blockquote>
+<blockquote>
+<p>The total amount of the computer&rsquo;s memory used by an algorithm when it is executed is the space complexity of that algorithm. We’ll not discuss space complexity in this article (to make this article a bit smaller).</p>
+</blockquote>
+<blockquote>
+<p><cite>freeCodeCamp<cite></p>
+</blockquote>
+<h3 id="what-is-time-complexity">What is Time Complexity<a class="anchor" href="#what-is-time-complexity">#</a></h3>
+<p>Time complexity is the number of operations an algorithm performs to complete its task. Typically the most efficient algorithm has the smallest time complexity and completes the least amount of tasks while still reaching the solution.</p>
+<h3 id="calculating-time-complexity">Calculating Time Complexity<a class="anchor" href="#calculating-time-complexity">#</a></h3>
+<p>Time complexity is commonly calculated and expressed in the <a href="https://en.wikipedia.org/wiki/Big_O_notation" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Big O Notation</a>
+. Time complexity is also commonly expressed with the worst-case scenario in mind, therefore you can be 100% sure that the algorithm runs within the calculated worst-case time.</p>
+<p>A program that loops through an array of size <code>N</code> has <code>O(N)</code> time complexity. A program that loops through a nested for loop each of size <code>N</code> has <code>O(N²)</code> time complexity. To learn more in-depth about how to properly calculate more advanced time complexities, check out this <a href="https://yourbasic.org/algorithms/time-complexity-explained/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+.</p>
+<p>The larger the expression inside the parenthesis, the longer the time it takes to run the algorithm. For example, a <code>O(N²)</code> algorithm will be expected to take longer than a <code>O(N)</code> algorithm, which will in turn take longer than a <code>O(log(N))</code> and so forth. However, this may not always be the case . If you graph <code>N²</code> and <code>N</code>, you will notice that while <code>N²</code> will eventually overtake <code>N</code> in time length, there is a certain interval where <code>N²</code> is faster than <code>N</code>. However, generally speaking, since these algorithms often deal with large data, the former assertion is sufficient by itself.</p>
+<p>List of common time complexities, their names, and examples, sorted in ascending order of complexity.</p>
+<ul>
+<li><code>O(1)</code> <strong>Constant Time</strong> - Accessing an element in an array with index number</li>
+<li><code>O(log n)</code> <strong>Logarithmic Time</strong> - Binary search in sorted array (get element at the halfway point of the array and comparing against target value, essentially cutting the search area of the area in half per iteration)</li>
+<li><code>O(n)</code> <strong>Linear Time</strong> - Linear search in array (checking each element one by one until target is found), Adding all elements of an array together</li>
+<li><code>O(n log n)</code> <strong>Quasilinear Time</strong> - Various sorts like Quick Sort and Merge Sort</li>
+<li><code>O(n²)</code> <strong>Quadratic Time</strong> - Various sorts like Bubble Sort and Insertion Sort, Getting every possible unique pair of elements from an array</li>
+</ul>
+<img src="https://www.happycoders.eu/wp-content/uploads/2020/05/big-o-notation-comparing-complexity-classes-v2-1200x617.png" height="300">
+<blockquote>
+<p>Image Credit: <cite> Woltmann, Sven. “Time Complexity Graph for Big O Notation.” <em>Https://Www.happycoders.eu/</em>, <a href="http://www.happycoders.eu/algorithms/big-o-notation-time-complexity/">www.happycoders.eu/algorithms/big-o-notation-time-complexity/</a>.<cite></p>
+</blockquote>
+<p>To understand Time Complexity in general more, check out this <a href="https://www.freecodecamp.org/news/time-complexity-of-algorithms/#:~:text=So%2C%20the%20time%20complexity%20is,terms%20of%20the%20time%20complexity." 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+.
+<br><br></p>
+<blockquote>
+<p>Created By: <cite> WHS Comp Sci Club Officers <cite></p>
+</blockquote>
+
+
+              
+          </article>
+          
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://whscompsciclub.github.io/algos/brute-force/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Brute Force</span>
+    </a>
+  
+
+  
+    <a class="pagination__item" href="https://whscompsciclub.github.io/algos/intro-sort/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >Intro to Sorting Algorithms</span>
+    </a>
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Email"
+         href="mailto:whscompsciclub@gmail.com"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://whscompsciclub.github.io/svg/email.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="GitHub"
+         href="https://github.com/whscompsciclub"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://whscompsciclub.github.io/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Facebook"
+         href="https://facebook.com/whscompsciclub"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://whscompsciclub.github.io/svg/facebook.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Instagram"
+         href="https://instagram.com/whscompsciclub"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://whscompsciclub.github.io/svg/instagram.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="YouTube"
+         href="https://www.youtube.com/channel/UCyWeApsYIEdXetkFHjEiqZA"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://whscompsciclub.github.io/svg/youtube.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Twitter"
+         href="https://twitter.com/whscompsciclub"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://whscompsciclub.github.io/svg/twitter.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>CC-BY-NC-SA 4.0 | WHS CSC 2021</p>
+          </footer>
+          </div>
+      </div>
+      
+      <div class="toc-container">
+          
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#what-is-time-complexity">What is Time Complexity</a></li>
+        <li><a href="#calculating-time-complexity">Calculating Time Complexity</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+    <script src="/js/table-of-contents.js"></script>
+  
+
+
+</body>
+
+</html>

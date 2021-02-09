@@ -4,7 +4,17 @@
   
   <url>
     <loc>https://whscompsciclub.github.io/</loc>
-    <lastmod>2021-01-30T00:00:00-08:00</lastmod>
+    <lastmod>2021-02-09T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://whscompsciclub.github.io/algos/</loc>
+    <lastmod>2021-02-09T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://whscompsciclub.github.io/algos/search/</loc>
+    <lastmod>2021-02-09T00:00:00-08:00</lastmod>
   </url>
   
   <url>
@@ -18,12 +28,7 @@
   </url>
   
   <url>
-    <loc>https://whscompsciclub.github.io/posts/</loc>
-    <lastmod>2021-01-21T00:00:00-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://whscompsciclub.github.io/posts/recursion/</loc>
+    <loc>https://whscompsciclub.github.io/algos/recursion/</loc>
     <lastmod>2021-01-21T00:00:00-08:00</lastmod>
   </url>
   
@@ -43,22 +48,17 @@
   </url>
   
   <url>
-    <loc>https://whscompsciclub.github.io/usaco/intro-sort/</loc>
+    <loc>https://whscompsciclub.github.io/algos/intro-sort/</loc>
     <lastmod>2020-12-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://whscompsciclub.github.io/usaco/</loc>
-    <lastmod>2020-12-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://whscompsciclub.github.io/usaco/time-complexity/</loc>
+    <loc>https://whscompsciclub.github.io/algos/time-complexity/</loc>
     <lastmod>2020-12-03T00:00:00-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://whscompsciclub.github.io/usaco/brute-force/</loc>
+    <loc>https://whscompsciclub.github.io/algos/brute-force/</loc>
     <lastmod>2020-12-02T00:00:00-08:00</lastmod>
   </url>
   
@@ -70,6 +70,11 @@
   <url>
     <loc>https://whscompsciclub.github.io/lang/python/</loc>
     <lastmod>2020-11-07T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://whscompsciclub.github.io/posts/</loc>
+    <lastmod>2020-11-05T00:00:00-08:00</lastmod>
   </url>
   
   <url>

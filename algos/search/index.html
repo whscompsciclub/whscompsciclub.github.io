@@ -2,7 +2,7 @@
 <html lang="en-us">
 
 <head>
-  <title>VSCode Python Installation Instructions | WHS Comp. Sci. Club</title>
+  <title>Searching Algorithms | WHS Comp. Sci. Club</title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
@@ -15,7 +15,7 @@
   
   
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="VSCode Python Installation Instructions" />
+  <meta name="twitter:title" content="Searching Algorithms" />
   <meta name="twitter:description" content=""/>
   <meta name="twitter:site" content="https://twitter.com/whscompsciclub" />
   <meta name="twitter:creator" content="https://twitter.com/whscompsciclub" />
@@ -50,8 +50,8 @@
     { 
       "@context": "http://schema.org", 
       "@type": "WebSite", 
-      "url": "https:\/\/whscompsciclub.github.io\/posts\/vscodepython\/",
-      "name": "VSCode Python Installation Instructions",
+      "url": "https:\/\/whscompsciclub.github.io\/algos\/search\/",
+      "name": "Searching Algorithms",
       "author": {
         "@type": "Person",
         "name": ""
@@ -81,7 +81,8 @@
       </li>
     
       <li>
-        <a  href="/algos">algos</a>
+        <a  class="active"
+         href="/algos">algos</a>
       </li>
     
       <li>
@@ -93,8 +94,7 @@
       </li>
     
       <li>
-        <a  class="active"
-         href="/posts">posts</a>
+        <a  href="/posts">posts</a>
       </li>
     
   </ul>
@@ -109,89 +109,96 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">VSCode Python Installation Instructions</h1>
-            <time datetime="2020-11-05 00:00:00 -0800 PST" class="post__date">Nov 5, 2020</time> 
+            <h1 id="post__title">Searching Algorithms</h1>
+            <time datetime="2021-02-09 00:00:00 -0800 PST" class="post__date">Feb 9, 2021</time> 
           </header>
           <article class="post__content">
               
-<h2 id="vscode-installation">VSCode Installation<a class="anchor" href="#vscode-installation">#</a></h2>
-<p>Download <a href="https://code.visualstudio.com/" 
-  
-   target="_blank" rel="noreferrer noopener" 
->VSCode</a>
- and choose the appropriate build from the multiselect
-<br><br>
-<img src="/images/build.png" height="325"></p>
-<h2 id="python-extension">Python Extension<a class="anchor" href="#python-extension">#</a></h2>
-<p>Install the <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" 
-  
-   target="_blank" rel="noreferrer noopener" 
->VSCode Python Extension</a>
- named <strong>Python</strong> in the VSCode Marketplace
-<br><br>
-<img src="/images/pythonextension1.png" height="300"></p>
-<h2 id="install-python">Install Python<a class="anchor" href="#install-python">#</a></h2>
-<h3 id="windows">Windows<a class="anchor" href="#windows">#</a></h3>
+<h2 id="linear-search">Linear Search<a class="anchor" href="#linear-search">#</a></h2>
+<h2 id="binary-search">Binary Search<a class="anchor" href="#binary-search">#</a></h2>
+<h2 id="jump-search">Jump Search<a class="anchor" href="#jump-search">#</a></h2>
 <ul>
-<li>Download <a href="https://www.python.org/downloads/" 
-  
-   target="_blank" rel="noreferrer noopener" 
->Python</a>
+<li><strong>prerequisites</strong>
+<ul>
+<li>the array must be sorted (like Binary Search)</li>
+<li>traverses the array in &ldquo;jumps&rdquo; of <code>√n</code> (<code>n</code> being the array length)</li>
+</ul>
 </li>
-<li>For additional instructions check out the <a href="https://docs.python.org/3.7/using/windows.html" 
+<li><strong>how it works</strong>
+<ul>
+<li>once the number being checked is greater than the target number,<br>
+jump <code>√n</code> back and then linear search forwards</li>
+</ul>
+</li>
+<li><strong>advantages</strong>
+<ul>
+<li>unlike binary search, jump search only jumps backwards once</li>
+<li>in a scenario in which jumping backward is costly,<br>
+jump search might be better than binary search</li>
+</ul>
+</li>
+<li><strong>example</strong>
+<ul>
+<li>when searching for a frame in a video,<br>
+you would probably skip ahead in intervals of <code>n</code></li>
+<li>once you know you&rsquo;ve passed the frame,<br>
+you start linear searching backwards</li>
+</ul>
+</li>
+<li><strong>O(√n)</strong></li>
+<li>Check out this <a href="https://www.geeksforgeeks.org/jump-search/" 
   
    target="_blank" rel="noreferrer noopener" 
->official documentation</a>
+>article</a>
+ to learn more about Jump Search</li>
+</ul>
+<h2 id="interpolation-search">Interpolation Search<a class="anchor" href="#interpolation-search">#</a></h2>
+<ul>
+<li><strong>prerequisites</strong>
+<ul>
+<li>the array needs to be sorted (like Binary &amp; Jump Search)</li>
+<li>the array needs to be uniformly distributed
+<ul>
+<li>0 1 4 6 7 231 22 (not uniform)</li>
+<li>0 2 4 6 8 10 12 14 (uniform)</li>
+</ul>
 </li>
 </ul>
-<h3 id="macos">macOS<a class="anchor" href="#macos">#</a></h3>
-<ul>
-<li>Use <a href="https://brew.sh/" 
-  
-   target="_blank" rel="noreferrer noopener" 
->Homebrew</a>
- to install Python</li>
-<li>use <code>brew install python3</code> at the Terminal prompt</li>
-<li>Follow instructions from <a href="https://code.visualstudio.com/docs/python/python-tutorial" 
-  
-   target="_blank" rel="noreferrer noopener" 
->here</a>
- if necessary</li>
-</ul>
-<h3 id="linux">Linux<a class="anchor" href="#linux">#</a></h3>
-<ul>
-<li>There should be a built-in Python 3 installation already, but to install other Python packages you must install <code>pip</code> with <a href="https://pip.pypa.io/en/stable/installing/#installing-with-get-pip-py" 
-  
-   target="_blank" rel="noreferrer noopener" 
->get-pip.py</a>
 </li>
-<li>Follow instructions from <a href="https://code.visualstudio.com/docs/python/python-tutorial" 
-  
-   target="_blank" rel="noreferrer noopener" 
->here</a>
- if necessary</li>
-</ul>
-<h2 id="check-python-installation">Check Python Installation<a class="anchor" href="#check-python-installation">#</a></h2>
+<li><strong>how it works</strong>
 <ul>
-<li>Windows: Open a command prompt and run <code>py -3 --version</code></li>
-<li>macOS / Linux: In the terminal, run <code>python3 --version</code></li>
+<li>similar to binary search</li>
+<li>instead of jumping to the midpoint,<br>
+interpolation search uses a formula to calculate a better new position</li>
+<li>formula: <code>pos = lo + [(x-arr[lo])*(hi-lo) / (arr[hi]-arr[Lo])]</code></li>
 </ul>
-<p>If the installation was successful, then the ouput windows will show the version of Python that you installed. If you received an error, try searching on <a href="https://google.com" 
+</li>
+<li><strong>advantages</strong>
+<ul>
+<li>when done correctly, it&rsquo;s much faster than binary search</li>
+</ul>
+</li>
+<li><strong>example</strong>
+<ul>
+<li>when searching through a phone book or dictionary for an entry under <code>W</code></li>
+<li>there&rsquo;s no point in searching in any section other than <code>W</code> because<br>
+we already know the word must be under that section</li>
+</ul>
+</li>
+<li><strong>O(log(log(n)))</strong></li>
+<li>Check out this <a href="https://www.geeksforgeeks.org/interpolation-search/" 
   
    target="_blank" rel="noreferrer noopener" 
->Google</a>
- and <a href="https://stackoverflow.com" 
+>article</a>
+ and this <a href="https://www.geeksforgeeks.org/g-fact-84/" 
   
    target="_blank" rel="noreferrer noopener" 
->Stack Overflow</a>
-, and following this tutorial <a href="https://code.visualstudio.com/docs/python/python-tutorial" 
-  
-   target="_blank" rel="noreferrer noopener" 
->here</a>
-.
-<br><br></p>
+>article</a>
+ to learn more about Interpolation Search</li>
+</ul>
 <blockquote>
-<p>Created By: <cite> WHS Comp Sci Club Officers <cite></p>
+<p>This is still a work in progress.<br>
+Created By: <cite> WHS Comp Sci Club Officers <cite></p>
 </blockquote>
 
 
@@ -200,6 +207,11 @@
           
 
  <div class="pagination">
+  
+    <a class="pagination__item" href="https://whscompsciclub.github.io/algos/recursion/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Recursion</span>
+    </a>
   
 
   
@@ -277,16 +289,10 @@
           
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#vscode-installation">VSCode Installation</a></li>
-    <li><a href="#python-extension">Python Extension</a></li>
-    <li><a href="#install-python">Install Python</a>
-      <ul>
-        <li><a href="#windows">Windows</a></li>
-        <li><a href="#macos">macOS</a></li>
-        <li><a href="#linux">Linux</a></li>
-      </ul>
-    </li>
-    <li><a href="#check-python-installation">Check Python Installation</a></li>
+    <li><a href="#linear-search">Linear Search</a></li>
+    <li><a href="#binary-search">Binary Search</a></li>
+    <li><a href="#jump-search">Jump Search</a></li>
+    <li><a href="#interpolation-search">Interpolation Search</a></li>
   </ul>
 </nav>
       </div>
