@@ -115,7 +115,74 @@
           <article class="post__content">
               
 <h2 id="linear-search">Linear Search<a class="anchor" href="#linear-search">#</a></h2>
+<ul>
+<li><strong>prerequisites</strong>
+<ul>
+<li>none</li>
+</ul>
+</li>
+<li><strong>how it works</strong>
+<ul>
+<li>iterates one at a time from left to right</li>
+</ul>
+</li>
+<li><strong>advantages</strong>
+<ul>
+<li>simple to implement</li>
+</ul>
+</li>
+<li><strong>example</strong>
+<ul>
+<li>when searching through a phone book for an entry under <code>W</code></li>
+<li>go page-by-page until you reach <code>W</code></li>
+</ul>
+</li>
+<li><strong>O(n)</strong></li>
+</ul>
 <h2 id="binary-search">Binary Search<a class="anchor" href="#binary-search">#</a></h2>
+<ul>
+<li><strong>prerequisites</strong>
+<ul>
+<li>the array must be sorted</li>
+</ul>
+</li>
+<li><strong>how it works</strong>
+<ul>
+<li>start at the middle and check the value</li>
+<li>if the value is less
+<ul>
+<li>check the middle value of the left half</li>
+</ul>
+</li>
+<li>else the value is greater
+<ul>
+<li>check the middle value of the right half</li>
+</ul>
+</li>
+<li>repeat until the value is found</li>
+</ul>
+</li>
+<li><strong>advantages</strong>
+<ul>
+<li>much faster than linear search, especially as <code>n</code> increases</li>
+</ul>
+</li>
+<li><strong>example</strong>
+<ul>
+<li>when searching through a phone book for an entry under <code>W</code></li>
+<li>start at <code>M</code> (middle of A-Z)</li>
+<li><code>W</code> &gt; <code>M</code> so check <code>T</code> (middle of M-Z)</li>
+<li><code>W</code> &gt; <code>T</code> so check <code>W</code> (middle of T-Z)</li>
+<li><code>W</code> = <code>W</code> so we&rsquo;re done</li>
+</ul>
+</li>
+<li><strong>O(log(n))</strong></li>
+<li>Check out this <a href="https://www.geeksforgeeks.org/binary-search/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>article</a>
+ to learn more about Binary Search</li>
+</ul>
 <h2 id="jump-search">Jump Search<a class="anchor" href="#jump-search">#</a></h2>
 <ul>
 <li><strong>prerequisites</strong>
@@ -180,7 +247,7 @@ interpolation search uses a formula to calculate a better new position</li>
 </li>
 <li><strong>example</strong>
 <ul>
-<li>when searching through a phone book or dictionary for an entry under <code>W</code></li>
+<li>when searching through a phone book for an entry under <code>W</code></li>
 <li>there&rsquo;s no point in searching in any section other than <code>W</code> because<br>
 we already know the word must be under that section</li>
 </ul>
@@ -197,8 +264,7 @@ we already know the word must be under that section</li>
  to learn more about Interpolation Search</li>
 </ul>
 <blockquote>
-<p>This is still a work in progress.<br>
-Created By: <cite> WHS Comp Sci Club Officers <cite></p>
+<p>Created By: <cite> WHS Comp Sci Club Officers <cite></p>
 </blockquote>
 
 

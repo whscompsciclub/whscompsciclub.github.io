@@ -14,8 +14,7 @@
       <pubDate>Tue, 09 Feb 2021 00:00:00 -0800</pubDate>
       
       <guid>https://whscompsciclub.github.io/algos/search/</guid>
-      <description>Linear Search Binary Search Jump Search  prerequisites  the array must be sorted (like Binary Search) traverses the array in &amp;ldquo;jumps&amp;rdquo; of √n (n being the array length)   how it works  once the number being checked is greater than the target number,
-jump √n back and then linear search forwards   advantages  unlike binary search, jump search only jumps backwards once in a scenario in which jumping backward is costly,</description>
+      <description>Linear Search  prerequisites  none   how it works  iterates one at a time from left to right   advantages  simple to implement   example  when searching through a phone book for an entry under W go page-by-page until you reach W   O(n)  Binary Search  prerequisites  the array must be sorted   how it works  start at the middle and check the value if the value is less  check the middle value of the left half   else the value is greater  check the middle value of the right half   repeat until the value is found   advantages  much faster than linear search, especially as n increases   example  when searching through a phone book for an entry under W start at M (middle of A-Z) W &amp;gt; M so check T (middle of M-Z) W &amp;gt; T so check W (middle of T-Z) W = W so we&amp;rsquo;re done   O(log(n)) Check out this article to learn more about Binary Search  Jump Search  prerequisites  the array must be sorted (like Binary Search) traverses the array in &amp;ldquo;jumps&amp;rdquo; of √n (n being the array length)   how it works  once the number being checked is greater than the target number,</description>
     </item>
     
     <item>
