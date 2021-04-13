@@ -162,7 +162,7 @@ console.log(person.printName());
   
    target="_blank" rel="noreferrer noopener" 
 >article</a>
- for more on Constructors in JavaScript.</p>
+ for more on Objects in JavaScript.</p>
 <h2 id="constructors">Constructors<a class="anchor" href="#constructors">#</a></h2>
 <p>Constructors are very similar to Objects, however, they act as Blueprints or Classes. Consider this example below:</p>
 <pre><code class="language-javascript">function person(first, last, age, state){
@@ -185,11 +185,55 @@ console.log(bobby.printName());
 >article</a>
  for more on Constructors in JavaScript.</p>
 <h2 id="callbacks">Callbacks<a class="anchor" href="#callbacks">#</a></h2>
-<p>Check out this <a href="https://www.w3schools.com/js/js_callback.asp" 
+<p>In JavaScript, Callbacks allow to call a function after another function finishes. Consider this example below where the function first has a 500 millisecond code delay.</p>
+<pre><code class="language-javascript">function first(){
+    setTimeout(() =&gt; {
+        console.log(1);
+    }, 500)
+}
+
+function second(){
+    console.log(2);
+}
+
+first();
+second();
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-javascript">2
+1
+</code></pre>
+<p>Although the function <code>first()</code> is called before <code>second()</code>, the 500 millisecond delay causes 2 to be printed before 1. To fix this, we can use a Callback. Callbacks allow us to pass another function into the first function like this:</p>
+<pre><code class="language-javascript">function first(callback){
+    setTimeout(() =&gt; {
+        console.log(1);
+        callback();
+    }, 500);
+}
+
+function second(){
+    console.log(2);
+}
+
+first(second);
+</code></pre>
+<p>This outputs <code>1</code> then <code>2</code>. The parameter named <code>callback</code> takes in a function name, then calls the function with <code>callback()</code> after the <code>console.log(1)</code>. Another way to utilize a Callback is like this:</p>
+<pre><code class="language-javascript">function first(callback){
+    setTimeout(() =&gt; {
+        console.log(1);
+        callback();
+    }, 500);
+}
+
+first(() =&gt; console.log(2));
+</code></pre>
+<p>Also outputs <code>1</code> then <code>2</code>, except the function is <strong>passed as the parameter</strong>.<br>
+<br>
+Check out this <a href="https://www.w3schools.com/js/js_callback.asp" 
   
    target="_blank" rel="noreferrer noopener" 
 >article</a>
- for more on Constructors in JavaScript.</p>
+ for more on Callbacks in JavaScript.</p>
 <blockquote>
 <p>This is still a work in progress.<br>
 Created By: <cite> WHS Comp Sci Club Officers <cite></p>
