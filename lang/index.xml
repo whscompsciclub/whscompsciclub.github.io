@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>CC-BY-NC-SA 4.0 | WHS CSC {year}</copyright>
-    <lastBuildDate>Sat, 30 Jan 2021 00:00:00 -0800</lastBuildDate><atom:link href="https://whscompsciclub.github.io/lang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Feb 2021 00:00:00 -0800</lastBuildDate><atom:link href="https://whscompsciclub.github.io/lang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript Cheatsheet</title>
+      <link>https://whscompsciclub.github.io/lang/js/</link>
+      <pubDate>Tue, 09 Feb 2021 00:00:00 -0800</pubDate>
+      
+      <guid>https://whscompsciclub.github.io/lang/js/</guid>
+      <description>What is JavaScript &amp;hellip; Objects Almost everything in JavaScript is an Object. Objects can be defined as variables.
+A simple example is a String, which is also an Object.
+var name = &amp;quot;Bob&amp;quot;; However, an Object can also contain multiple values. In an Object, you can store properties as well as methods.
+var person = {firstName: &amp;quot;Joey&amp;quot;,lastName: &amp;quot;Bobby&amp;quot;,age: 14,state: &amp;quot;CA&amp;quot;} In this person Object above, we have 4 properties stored in the format of property: value</description>
+    </item>
+    
     <item>
       <title>CSS Cheatsheet</title>
       <link>https://whscompsciclub.github.io/lang/css/</link>
