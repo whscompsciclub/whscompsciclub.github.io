@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>CC-BY-NC-SA 4.0 | WHS CSC {year}</copyright>
-    <lastBuildDate>Thu, 05 Nov 2020 00:00:00 -0800</lastBuildDate><atom:link href="https://whscompsciclub.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Mar 2021 00:00:00 -0800</lastBuildDate><atom:link href="https://whscompsciclub.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Node.js &amp; NPM Installation</title>
+      <link>https://whscompsciclub.github.io/posts/nodenpm/</link>
+      <pubDate>Fri, 05 Mar 2021 00:00:00 -0800</pubDate>
+      
+      <guid>https://whscompsciclub.github.io/posts/nodenpm/</guid>
+      <description>Node.js What is Node.js Node.js is a JavaScript runtime built on Chrome&amp;rsquo;s V8 JavaScript engine. You can use Node.js to create applications, programs, backend projects, server-side stuff and much more &amp;hellip;
+Node is also quite popular, and easy to use/learn.
+Installing Node.js To install Node.js, navigate to https://nodejs.org/en/download/ and choose the correct installer for your OS System.
+Follow the steps (choose the defaults if you&amp;rsquo;re unsure) to install Node.
+After installation, open a Command Prompt or Powershell or Terminal and try running node --version to check if Node.</description>
+    </item>
+    
     <item>
       <title>VSCode Python Installation Instructions</title>
       <link>https://whscompsciclub.github.io/posts/vscodepython/</link>
